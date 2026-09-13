@@ -102,6 +102,7 @@ Status
     ✅ 20 subjects downloaded (60 T1 scans)
     ✅ Subject ID schema verified (6-digit non-sequential)
     ✅ Directory hierarchy corrected (raw/output siblings)
+    ✅ Single subject run-reconall.sh processing
     ⏳ Batch processing underway in screen -r neuro
     📁 Raw data: ~/mrart_demo/ds004173
     📁 Outputs: ~/mrart_demo/fs_subjects

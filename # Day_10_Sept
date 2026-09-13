@@ -1,0 +1,53 @@
+# A. PREPARING THE ENVIRONMENT
+
+# Downloaded XQuartz 2.8.6 
+# Downloaded FreeSurfer 8.2.0
+# Running Python 3.12.2
+
+# 	pip install openneuro-py pandas matplotlib seaborn pingouin nibabel
+
+# Installed XQuartz
+# Restarted laptop
+# Installed FreeSurfer
+# Put Python packages in virtual environment:
+
+# 	python3 -m venv ~/venvs/neuro
+# 	source ~/venvs/neuro/bin/activate
+#	python3 -m pip install openneuro-py pandas matplotlib seaborn pingouin nibabel
+
+# Download one subject to verify subject labels
+
+source ~/venvs/neuro/bin/activate #enter
+mkdir -p ~/mrart_demo/ds004173    #enter
+mkdir -p ~/mrart_demo/fs_subjects #enter
+cd ~/mrart_demo					  #enter
+export SUBJECTS_DIR=$HOME/mrart_demo/fs_subjects #enter
+openneuro-py download --dataset ds004173 --include sub-01 #enter
+
+# This failed. Try again with 3-digit subject codes (run modified last line)
+
+openneuro-py download --dataset ds004173 --include sub-001
+
+# This also failed. Checked MR-ART's dataset listing - subjects have unique 6-digit ID numbers.
+
+openneuro-py download --dataset ds004173 --include sub-000103 # This worked
+
+ls ~/mrart_demo/ds004173/sub-000103/anat/
+
+# sub-000103_acq-headmotion1_T1w.json	sub-000103_acq-headmotion2_T1w.nii.gz
+# sub-000103_acq-headmotion1_T1w.nii.gz	sub-000103_acq-standard_T1w.json
+# sub-000103_acq-headmotion2_T1w.json	sub-000103_acq-standard_T1w.nii.gz
+
+
+# Download the first 20 subjects' T1 scans:
+
+export SUBJECTS_DIR=$HOME/mrart_demo/fs_subjects mkdir -p 
+$SUBJECTS_DIR for sub in sub-000148 sub-000149 sub-000159 sub-000175 \
+           sub-000179 sub-000183 sub-003617 sub-009673 sub-010769 \
+           sub-012059 sub-012322 sub-016504 sub-067018 sub-089207 \
+           sub-105822 sub-107738 sub-108142 sub-118003 sub-122916; do openneuro-py download --dataset ds004173 --include ${sub} done
+
+
+# All 20 downloaded into directory /mrart_demo/ds004173, but that directory exists as a child of #fs_subjects rather than a sibling. Moved /mrart_demo/ds004173 to be sibling of ~/mrart_demo/ #fs_subjects.
+
+mv ~/mrart_demo/fs_subjects/ds004173 ~/mrart_demo/
