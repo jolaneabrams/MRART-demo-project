@@ -1,0 +1,13 @@
+# Raw and processed imaging data — re-downloadable, not version-controlled
+ds004173/
+fs_subjects/
+
+# Virtual environment
+venvs/
+
+# Python housekeeping
+__pycache__/
+*.pyc
+
+# OS clutter
+.DS_Store
