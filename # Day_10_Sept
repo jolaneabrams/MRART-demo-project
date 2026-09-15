@@ -51,3 +51,38 @@ $SUBJECTS_DIR for sub in sub-000148 sub-000149 sub-000159 sub-000175 \
 # All 20 downloaded into directory /mrart_demo/ds004173, but that directory exists as a child of #fs_subjects rather than a sibling. Moved /mrart_demo/ds004173 to be sibling of ~/mrart_demo/ #fs_subjects.
 
 mv ~/mrart_demo/fs_subjects/ds004173 ~/mrart_demo/
+
+# B. BATCH SCRIPT DEBUGGING (13 Sep 2026, ~2.5 hours)
+
+# Canonical project path (not ~/mrart_demo):
+#   ~/Desktop/GitHub/MRART_Demo_Project
+
+# What went wrong
+# - A copy of run_reconall.sh on ~/Desktop was edited in nano; the GitHub copy was unchanged.
+#   Screenshot: " nano goes wild.png" (nano mixed with terminal scrollback).
+# - Source of FreeSurfer was often silenced (>/dev/null), so PATH/setup failures looked like empty logs
+#   and immediate exit 1.
+# - FREESURFER_HOME must be set BEFORE sourcing FreeSurferEnv.sh.
+# - License for this machine is 8.2.0 only:
+#     /Applications/freesurfer/8.2.0/license.txt
+#   7.3.2 is installed but must not be used (no matching license).
+# - recon-all 8.2.0 IS present at /Applications/freesurfer/8.2.0/bin/recon-all.
+#   An earlier "missing binary" scare was a bad glob (freesurfer*/bin) plus 7.3.2 leftover on PATH.
+# - jobs -r vs jobs -rp was a red herring compared with the path/license issues.
+# - A test batch printed many [run ] lines. About 25 recon-all.done files appeared at 17:10–17:11,
+#   each containing only "1". Matching logs were ~3.1 KB. Those were false completions, not real
+#   recon-all -all runs (a real log is tens of MB over many hours).
+
+# Script copies kept in the repo from that day
+#   run_reconall.sh.save    — mashed-together draft (wrong paths, merged lines)
+#   run_reconall.sh.backup  — 8.2.0, errors hidden, jobs -rp
+#   run_reconall.sh.broken  — end-of-day working draft: 8.2.0, FS_LICENSE set, recon-all check,
+#                             jobs -r, default MAX_PAR=2 (still not safe on 36 GB)
+
+# End-of-day script header that actually matched the install:
+#   export FREESURFER_HOME=/Applications/freesurfer/8.2.0
+#   source "$FREESURFER_HOME/FreeSurferEnv.sh"
+#   export FS_LICENSE=/Applications/freesurfer/8.2.0/license.txt
+
+# Do not treat .done files that contain only "1" as finished work.
+# Do not run MAX_PAR=4 on this laptop; skull-stripping alone can use ~9 GB.

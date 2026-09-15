@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# Batch recon-all for MR-ART (ds004173) subset
+# Usage: ./run_reconall.sh <bids_dir> [max_parallel]
+
+BIDS_DIR=${1:?Usage: run_reconall.sh <bids_dir> [max_parallel]}
+MAX_PAR=${2:-2}  # parallel jobs; match your CPU cores conservatively
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export FREESURFER_HOME=/Applications/freesurfer/8.2.0
+
+# Source FreeSurfer env (remove >/dev/null for debugging initially)
+source "$FREESURFER_HOME/FreeSurferEnv.sh"
+
+export FS_LICENSE=/Applications/freesurfer/8.2.0/license.txt
+
+# Verify recon-all is available
+command -v recon-all >/dev/null 2>&1 || {
+    echo "FATAL: recon-all not found after sourcing FreeSurferEnv.sh" >&2
+    echo "FREESURFER_HOME=$FREESURFER_HOME" >&2
+    exit 1
+}
+
+export SUBJECTS_DIR="${SCRIPT_DIR}/fs_subjects"
+LOG_DIR="${SCRIPT_DIR}/logs"
+mkdir -p "$SUBJECTS_DIR" "$LOG_DIR"
+
+FAILED="$LOG_DIR/failed_subjects.txt"
+: > "$FAILED"
+
+count=0
+for t1 in "$BIDS_DIR"/sub-*/anat/*_T1w.nii.gz; do
+    ((count++))
+    base=$(basename "$t1" .nii.gz)
+    sid="mrart_${base}"
+
+    if [ -f "$SUBJECTS_DIR/$sid/scripts/recon-all.done" ]; then
+        echo "[skip] $sid already complete"
+        continue
+    fi
+
+    echo "[run ] $sid (job $count)"
+    (recon-all -i "$t1" -s "$sid" -all \
+        > "$LOG_DIR/${sid}.log" 2>&1
+     echo $? > "$LOG_DIR/${sid}.exitcode") &
+
+    while [ "$(jobs -r | wc -l)" -ge "$MAX_PAR" ]; do sleep 5; done
+done
+wait
+
+# Report failures
+for sdir in "$SUBJECTS_DIR"/mrart_*; do
+    s=$(basename "$sdir")
+    [ -f "$sdir/scripts/recon-all.done" ] || echo "$s" >> "$FAILED"
+done
+
+echo "Done. Failures (if any) listed in $FAILED"
+echo "Log files in: $LOG_DIR"
