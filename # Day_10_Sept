@@ -86,3 +86,43 @@ mv ~/mrart_demo/fs_subjects/ds004173 ~/mrart_demo/
 
 # Do not treat .done files that contain only "1" as finished work.
 # Do not run MAX_PAR=4 on this laptop; skull-stripping alone can use ~9 GB.
+
+# C. 14 Sep 2026 morning (before Cursor session)
+
+# Goal: process ALL three scans per person (standard / headmotion1 / headmotion2)
+# so cortical thickness can be compared across motion. Do not restrict the glob
+# to acq-standard only.
+
+# Data actually on disk
+#   20 subject folders in ds004173/
+#   59 T1w files (not 60)
+#   Missing: sub-105822 acq-headmotion1
+#   Complete-case analyses that need all three conditions: n=19
+#   Still vs moderate: n=20
+
+# Crash that started the morning
+#   Command used: ./run_reconall.sh ds004173 4 > batch_output.log 2>&1 &
+#   ps | grep recon-all | wc -l showed 8 (each recon-all is several processes)
+#   Machine ran out of RAM and shut down.
+#   Leftovers in fs_subjects were tiny (~72 KB scaffolding), not real reconstructions.
+
+# Manual leftover
+#   One command-line test subject (later test_mrt_001 / similar) ~28 MB with a .done
+#   marker. That is NOT a finished recon-all. Do not skip it as complete.
+
+# Script advice that morning (hardened draft)
+#   Default MAX_PAR=2, MIN_FREE_MB=8000, caffeinate, -no-isrunning resume,
+#   count unique mrart_sub-* names not raw recon-all process count.
+#   Caveat found later the same day: vm_stat "Pages free" undercounts usable RAM
+#   on macOS and can hang the launcher; SynthStrip can still be killed at ~9 GB
+#   even with one job. Prefer MAX_PAR=1 for a test. Do not pass -i when resuming
+#   a folder that already has orig.mgz.
+
+# Mapping for analysis
+#   acq-standard    -> still
+#   acq-headmotion1 -> mild
+#   acq-headmotion2 -> moderate
+
+# GitHub: repo was pushed via Desktop but not visible when signed out — likely
+# still private. Making it public is a Settings > Danger Zone change after
+# checking no license keys are in the tree.
