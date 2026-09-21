@@ -21,7 +21,7 @@ Head motion degrades structural MRI morphometry, but the magnitude of that degra
 
 The MR-ART dataset contains T1-weighted 3D structural MRI images of 148 healthy adults, each scanned three times under increasing head motion (still, mild, moderate). All scans are anonymized, BIDS-organized, and defaced.
 
-**Subset used:** First 20 subjects (60 T1 scans total). Subject labels verified against the dataset manifest: non-sequential 6-digit IDs (e.g., `sub-000103`).
+**Subset used:** First 20 subjects, **59 T1 scans** (not 60). `sub-105822` has no `acq-headmotion1` (mild) scan. Subject labels are non-sequential 6-digit IDs (e.g., `sub-000103`).
 
 ### Download Command
 
@@ -98,20 +98,20 @@ Failure Log
 Per-subject logs stored in logs/. Batch-generated failure list: logs/failed_subjects.txt (empty if all succeed).
 Status
 
-    ✅ Environment configured (XQuartz, FreeSurfer, Python venv)
-    ✅ 20 subjects downloaded (60 T1 scans)
+    ✅ Environment configured (XQuartz, FreeSurfer 8.2.0, Python venv)
+    ✅ 20 subjects downloaded (59 T1 scans; no mild scan for sub-105822)
     ✅ Subject ID schema verified (6-digit non-sequential)
-    ✅ Directory hierarchy corrected (raw/output siblings)
-    ✅ Single subject run-reconall.sh processing
-    ⏳ Batch processing underway in screen -r neuro
-    📁 Raw data: ~/mrart_demo/ds004173
-    📁 Outputs: ~/mrart_demo/fs_subjects
-    📋 QC log: logs/failed_subjects.txt
+    ✅ recon-all -all finished on all 59 scans (FreeSurfer 8.2.0, MAX_PAR=1)
+    ✅ Mean scan time 1.7 h (range 83–134 min); batch wall clock 90 h for 55 scans (17–21 Sep 2026)
+    ⏳ Visual QC in FreeView
+    ⏳ Thickness/volume tables → tidy CSV and drift/ICC analysis
+    📁 Raw data: ds004173/ (local, not in git)
+    📁 Outputs: fs_subjects/ (local, ~25 GB, not in git)
+    📋 Success list: logs/succeeded_subjects.txt
 
 Next Steps
 
-Once recon-all completes (~7 days at 2 parallel jobs):
-
+    Visual QC of white/pial surfaces in FreeView
     Extract thickness tables using aparcstats2table / asegstats2table
     Generate tidy CSV with motion-condition mapping
     Compute drift metrics (% change per ROI)

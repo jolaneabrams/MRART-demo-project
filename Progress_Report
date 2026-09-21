@@ -126,3 +126,23 @@ mv ~/mrart_demo/fs_subjects/ds004173 ~/mrart_demo/
 # GitHub: repo was pushed via Desktop but not visible when signed out — likely
 # still private. Making it public is a Settings > Danger Zone change after
 # checking no license keys are in the tree.
+# (Later: repo is public at github.com/jolaneabrams/MRART-demo-project.)
+
+# D. recon-all BATCH COMPLETE (17–21 Sep 2026)
+
+# After sub-000103 still/mild/moderate each finished once (SynthStrip kills on
+# early tries; one-at-a-time on 36 GB Mac), started the remaining scans with:
+#   caffeinate -i ./run_reconall.sh ds004173 1
+
+# Result
+#   59/59 T1s have a real recon-all.done (no recon-all.error)
+#   20 subjects; sub-105822 still lacks acq-headmotion1 (dataset, not a crash)
+#   fs_subjects/ stays local (~25 GB), not git
+
+# Runtimes (recorded 21 Sep)
+#   Average scan runtime: 1.7 hours
+#   Range per scan: 83–134 minutes
+#   Overall wall clock (55 scans): 90 hours
+#   Batch window: Thu 17 Sep 16:41 → Mon 21 Sep 10:41 PDT
+
+# Next: visual QC in FreeView, then aparcstats2table / asegstats2table.
