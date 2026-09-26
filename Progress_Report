@@ -146,3 +146,41 @@ mv ~/mrart_demo/fs_subjects/ds004173 ~/mrart_demo/
 #   Batch window: Thu 17 Sep 16:41 → Mon 21 Sep 10:41 PDT
 
 # Next: visual QC in FreeView, then aparcstats2table / asegstats2table.
+
+# E. VISUAL QC AND FREEVIEW (21–26 Sep 2026)
+
+# After recon-all, work shifted to FreeView QC (white=blue, pial=red on T1.mgz).
+# Screenshot deck: qc_reference/QC.pptx only (not on Desktop/signs).
+# Do not commit fs_subjects/ (~25 GB).
+
+# Anatomy to watch (Desikan; common fail spots on motion T1s)
+#   Cingulate — sagittal near midline, belt over corpus callosum
+#   OFC — undersurface of frontal lobes (medial/lateral orbitofrontal)
+#   Temporal pole — anterior tip of temporal lobe
+# Public labeled cases: Radiopaedia cingulate gyrus anatomy; orbitofrontal cortex MRI.
+
+# Example reads
+#   sub-000159 standard — pass on the inspected slice; still scroll OFC / temporal pole / cingulate.
+#   sub-000148 standard — coronal pial can look like it cuts the MCP; that is often
+#     ventral temporal vs peduncle on one slice, worse if underlay is brainmask.mgz.
+#     Switch to T1.mgz and scroll. Keep unless pial stays in cerebellar WM.
+#   sub-009673 standard vs headmotion2 — good within-subject demo: still is a clean T1;
+#     moderate shows ringing/ghosting but surfaces still exist. Do not exclude only
+#     because the motion T1 looks ugly.
+
+# Runtime vs file size (59 scans)
+#   Watching runtime was a reasonable failure check (SynthStrip kills die in ~1 min).
+#   Among finished jobs, gzipped T1 size vs runtime r≈0.66 (~43% of variance).
+#   Motion condition means are similar (~94–98 min). Slow scans can still be successes.
+
+# FreeView on this Mac
+#   SUBJECTS_DIR must be .../MRART_Demo_Project/fs_subjects AFTER sourcing FreeSurferEnv.sh
+#   (SUBJECT_DIR without the S is ignored; default is $FREESURFER_HOME/subjects).
+#   Two windows: open -n Freeview.app --args ... (second freeview reuses one window).
+#   The three 2D panes share one 3D cursor. Clicking the anterior pole jumps coronal
+#   there. Park the cursor mid-brain, then mouse-wheel the pane you want.
+#   Line breaks: no spaces after \. A lone `freeview` then `-v` gives "command not found: -v".
+#   Cursor RAS at the bottom of the window is millimetres (~−128 to +128 on these T1s).
+#   Large R/A/S labels on the panes (~200) are not that box; invalid RAS snaps back.
+#   -ras on the command line wants millimetre RAS, not pane labels. -slice wants
+#   integer voxel indices of T1.mgz. Put flags so numbers are not parsed as filenames.
