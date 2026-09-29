@@ -1,0 +1,235 @@
+subject,condition,measure,measure_key,still_value,motion_value,pct_change,modified_z,robust_flag,tukey_flag,enigma_flag,surface_holes_motion,surface_holes_still
+sub-000103,mild,global mean thickness,mean_thickness_mm,2.572,2.554,-0.66,1.33,False,False,False,34.0,40.0
+sub-000148,mild,global mean thickness,mean_thickness_mm,2.487,2.419,-2.71,0.06,False,False,False,46.0,19.0
+sub-000149,mild,global mean thickness,mean_thickness_mm,2.371,2.293,-3.29,-0.3,False,False,False,75.0,20.0
+sub-000159,mild,global mean thickness,mean_thickness_mm,2.648,2.494,-5.78,-1.85,False,False,False,38.0,19.0
+sub-000175,mild,global mean thickness,mean_thickness_mm,2.439,2.37,-2.81,0.0,False,False,False,23.0,15.0
+sub-000179,mild,global mean thickness,mean_thickness_mm,2.337,2.318,-0.81,1.24,False,False,False,12.0,19.0
+sub-000183,mild,global mean thickness,mean_thickness_mm,2.573,2.444,-5.02,-1.37,False,False,False,117.0,128.0
+sub-003617,mild,global mean thickness,mean_thickness_mm,2.408,2.4,-0.34,1.53,False,False,False,34.0,25.0
+sub-009673,mild,global mean thickness,mean_thickness_mm,2.596,2.538,-2.22,0.36,False,False,False,19.0,14.0
+sub-010769,mild,global mean thickness,mean_thickness_mm,2.534,2.45,-3.33,-0.33,False,False,False,67.0,15.0
+sub-012059,mild,global mean thickness,mean_thickness_mm,2.561,2.47,-3.57,-0.47,False,False,False,55.0,22.0
+sub-012322,mild,global mean thickness,mean_thickness_mm,2.413,2.325,-3.64,-0.52,False,False,False,58.0,14.0
+sub-016504,mild,global mean thickness,mean_thickness_mm,2.625,2.399,-8.61,-3.6,True,True,False,113.0,14.0
+sub-067018,mild,global mean thickness,mean_thickness_mm,2.519,2.421,-3.89,-0.67,False,False,False,19.0,21.0
+sub-089207,mild,global mean thickness,mean_thickness_mm,2.555,2.484,-2.78,0.01,False,False,False,44.0,31.0
+sub-107738,mild,global mean thickness,mean_thickness_mm,2.397,2.4,0.11,1.81,False,False,False,84.0,20.0
+sub-108142,mild,global mean thickness,mean_thickness_mm,2.532,2.517,-0.61,1.36,False,False,False,24.0,16.0
+sub-118003,mild,global mean thickness,mean_thickness_mm,2.513,2.444,-2.74,0.04,False,False,False,46.0,12.0
+sub-122916,mild,global mean thickness,mean_thickness_mm,2.623,2.499,-4.74,-1.2,False,False,False,19.0,17.0
+sub-000103,mild,rostral middle frontal,rmfg_mm,2.54,2.49,-1.97,0.05,False,False,False,34.0,40.0
+sub-000148,mild,rostral middle frontal,rmfg_mm,2.316,2.262,-2.33,-0.09,False,False,False,46.0,19.0
+sub-000149,mild,rostral middle frontal,rmfg_mm,2.21,2.239,1.34,1.34,False,False,False,75.0,20.0
+sub-000159,mild,rostral middle frontal,rmfg_mm,2.455,2.232,-9.1,-2.73,False,True,False,38.0,19.0
+sub-000175,mild,rostral middle frontal,rmfg_mm,2.359,2.293,-2.78,-0.26,False,False,False,23.0,15.0
+sub-000179,mild,rostral middle frontal,rmfg_mm,2.356,2.378,0.93,1.19,False,False,False,12.0,19.0
+sub-000183,mild,rostral middle frontal,rmfg_mm,2.508,2.375,-5.32,-1.26,False,False,False,117.0,128.0
+sub-003617,mild,rostral middle frontal,rmfg_mm,2.351,2.261,-3.83,-0.67,False,False,False,34.0,25.0
+sub-009673,mild,rostral middle frontal,rmfg_mm,2.531,2.506,-0.97,0.44,False,False,False,19.0,14.0
+sub-010769,mild,rostral middle frontal,rmfg_mm,2.574,2.46,-4.43,-0.91,False,False,False,67.0,15.0
+sub-012059,mild,rostral middle frontal,rmfg_mm,2.434,2.367,-2.77,-0.26,False,False,False,55.0,22.0
+sub-012322,mild,rostral middle frontal,rmfg_mm,2.283,2.177,-4.64,-0.99,False,False,False,58.0,14.0
+sub-016504,mild,rostral middle frontal,rmfg_mm,2.379,2.329,-2.1,0.0,False,False,False,113.0,14.0
+sub-067018,mild,rostral middle frontal,rmfg_mm,2.321,2.308,-0.54,0.61,False,False,False,19.0,21.0
+sub-089207,mild,rostral middle frontal,rmfg_mm,2.355,2.282,-3.12,-0.4,False,False,False,44.0,31.0
+sub-107738,mild,rostral middle frontal,rmfg_mm,2.213,2.226,0.56,1.04,False,False,False,84.0,20.0
+sub-108142,mild,rostral middle frontal,rmfg_mm,2.347,2.396,2.09,1.64,False,False,False,24.0,16.0
+sub-118003,mild,rostral middle frontal,rmfg_mm,2.441,2.396,-1.8,0.12,False,False,False,46.0,12.0
+sub-122916,mild,rostral middle frontal,rmfg_mm,2.485,2.526,1.63,1.46,False,False,False,19.0,17.0
+sub-000103,mild,superior temporal,stg_mm,3.004,3.012,0.27,2.56,False,False,False,34.0,40.0
+sub-000148,mild,superior temporal,stg_mm,2.721,2.658,-2.3,0.63,False,False,False,46.0,19.0
+sub-000149,mild,superior temporal,stg_mm,2.728,2.531,-7.2,-3.07,False,False,False,75.0,20.0
+sub-000159,mild,superior temporal,stg_mm,3.191,3.003,-5.88,-2.07,False,False,False,38.0,19.0
+sub-000175,mild,superior temporal,stg_mm,2.822,2.734,-3.1,0.02,False,False,False,23.0,15.0
+sub-000179,mild,superior temporal,stg_mm,2.717,2.739,0.83,2.98,False,False,False,12.0,19.0
+sub-000183,mild,superior temporal,stg_mm,3.042,2.919,-4.03,-0.67,False,False,False,117.0,128.0
+sub-003617,mild,superior temporal,stg_mm,2.837,2.77,-2.34,0.59,False,False,False,34.0,25.0
+sub-009673,mild,superior temporal,stg_mm,3.038,3.032,-0.18,2.22,False,False,False,19.0,14.0
+sub-010769,mild,superior temporal,stg_mm,2.766,2.585,-6.53,-2.56,False,False,False,67.0,15.0
+sub-012059,mild,superior temporal,stg_mm,2.957,2.771,-6.29,-2.38,False,False,False,55.0,22.0
+sub-012322,mild,superior temporal,stg_mm,2.897,2.8,-3.35,-0.16,False,False,False,58.0,14.0
+sub-016504,mild,superior temporal,stg_mm,3.103,2.79,-10.07,-5.23,True,True,False,113.0,14.0
+sub-067018,mild,superior temporal,stg_mm,2.964,2.893,-2.38,0.57,False,False,False,19.0,21.0
+sub-089207,mild,superior temporal,stg_mm,3.053,2.962,-2.98,0.11,False,False,False,44.0,31.0
+sub-107738,mild,superior temporal,stg_mm,2.821,2.708,-3.97,-0.63,False,False,False,84.0,20.0
+sub-108142,mild,superior temporal,stg_mm,2.812,2.833,0.75,2.92,False,False,False,24.0,16.0
+sub-118003,mild,superior temporal,stg_mm,2.841,2.752,-3.13,0.0,False,False,False,46.0,12.0
+sub-122916,mild,superior temporal,stg_mm,3.04,2.934,-3.47,-0.25,False,False,False,19.0,17.0
+sub-000103,mild,temporal pole,tpole_mm,3.97,3.605,-9.18,0.0,False,False,False,34.0,40.0
+sub-000148,mild,temporal pole,tpole_mm,3.389,2.816,-16.92,-0.8,False,False,False,46.0,19.0
+sub-000149,mild,temporal pole,tpole_mm,3.532,3.051,-13.6,-0.46,False,False,False,75.0,20.0
+sub-000159,mild,temporal pole,tpole_mm,3.833,3.023,-21.12,-1.23,False,False,False,38.0,19.0
+sub-000175,mild,temporal pole,tpole_mm,3.734,3.633,-2.7,0.67,False,False,False,23.0,15.0
+sub-000179,mild,temporal pole,tpole_mm,3.312,3.453,4.27,1.39,False,False,False,12.0,19.0
+sub-000183,mild,temporal pole,tpole_mm,3.528,3.553,0.71,1.02,False,False,False,117.0,128.0
+sub-003617,mild,temporal pole,tpole_mm,3.495,3.661,4.75,1.43,False,False,False,34.0,25.0
+sub-009673,mild,temporal pole,tpole_mm,3.744,3.732,-0.35,0.91,False,False,False,19.0,14.0
+sub-010769,mild,temporal pole,tpole_mm,3.884,3.273,-15.73,-0.67,False,False,False,67.0,15.0
+sub-012059,mild,temporal pole,tpole_mm,3.58,3.239,-9.51,-0.03,False,False,False,55.0,22.0
+sub-012322,mild,temporal pole,tpole_mm,3.798,3.093,-18.56,-0.97,False,False,False,58.0,14.0
+sub-016504,mild,temporal pole,tpole_mm,3.912,2.752,-29.64,-2.11,False,False,False,113.0,14.0
+sub-067018,mild,temporal pole,tpole_mm,3.873,3.66,-5.51,0.38,False,False,False,19.0,21.0
+sub-089207,mild,temporal pole,tpole_mm,4.069,3.783,-7.02,0.22,False,False,False,44.0,31.0
+sub-107738,mild,temporal pole,tpole_mm,3.586,3.131,-12.7,-0.36,False,False,False,84.0,20.0
+sub-108142,mild,temporal pole,tpole_mm,3.673,3.388,-7.76,0.15,False,False,False,24.0,16.0
+sub-118003,mild,temporal pole,tpole_mm,3.579,2.825,-21.06,-1.22,False,False,False,46.0,12.0
+sub-122916,mild,temporal pole,tpole_mm,3.719,3.495,-6.02,0.33,False,False,False,19.0,17.0
+sub-000103,mild,caudate (L+R),caudate_mm3,8298.7,8331.7,0.4,0.43,False,False,False,34.0,40.0
+sub-000148,mild,caudate (L+R),caudate_mm3,7329.5,7295.4,-0.47,-0.67,False,False,False,46.0,19.0
+sub-000149,mild,caudate (L+R),caudate_mm3,6824.1,6929.2,1.54,1.89,False,False,False,75.0,20.0
+sub-000159,mild,caudate (L+R),caudate_mm3,7989.8,7867.1,-1.54,-2.04,False,False,False,38.0,19.0
+sub-000175,mild,caudate (L+R),caudate_mm3,8694.4,8718.3,0.27,0.27,False,False,False,23.0,15.0
+sub-000179,mild,caudate (L+R),caudate_mm3,7159.9,7279.8,1.67,2.06,False,False,False,12.0,19.0
+sub-000183,mild,caudate (L+R),caudate_mm3,8390.2,8325.5,-0.77,-1.06,False,False,False,117.0,128.0
+sub-003617,mild,caudate (L+R),caudate_mm3,7598.6,7487.6,-1.46,-1.95,False,False,False,34.0,25.0
+sub-009673,mild,caudate (L+R),caudate_mm3,7963.5,7991.7,0.35,0.37,False,False,False,19.0,14.0
+sub-010769,mild,caudate (L+R),caudate_mm3,8195.4,8166.2,-0.36,-0.54,False,False,False,67.0,15.0
+sub-012059,mild,caudate (L+R),caudate_mm3,8354.4,8275.3,-0.95,-1.29,False,False,False,55.0,22.0
+sub-012322,mild,caudate (L+R),caudate_mm3,7681.8,7588.7,-1.21,-1.63,False,False,False,58.0,14.0
+sub-016504,mild,caudate (L+R),caudate_mm3,9158.1,9149.8,-0.09,-0.2,False,False,False,113.0,14.0
+sub-067018,mild,caudate (L+R),caudate_mm3,8539.9,8566.2,0.31,0.31,False,False,False,19.0,21.0
+sub-089207,mild,caudate (L+R),caudate_mm3,8883.6,8925.4,0.47,0.52,False,False,False,44.0,31.0
+sub-107738,mild,caudate (L+R),caudate_mm3,10034.7,10021.7,-0.13,-0.25,False,False,False,84.0,20.0
+sub-108142,mild,caudate (L+R),caudate_mm3,8069.5,8074.6,0.06,0.0,False,False,False,24.0,16.0
+sub-118003,mild,caudate (L+R),caudate_mm3,6492.5,6630.7,2.13,2.64,False,True,False,46.0,12.0
+sub-122916,mild,caudate (L+R),caudate_mm3,6662.4,6790.8,1.93,2.38,False,False,False,19.0,17.0
+sub-000103,mild,hippocampus (L+R),hippocampus_mm3,9608.4,9479.2,-1.34,-2.04,False,False,False,34.0,40.0
+sub-000148,mild,hippocampus (L+R),hippocampus_mm3,8752.9,8960.9,2.38,1.61,False,False,False,46.0,19.0
+sub-000149,mild,hippocampus (L+R),hippocampus_mm3,8921.2,9044.0,1.38,0.63,False,False,False,75.0,20.0
+sub-000159,mild,hippocampus (L+R),hippocampus_mm3,9062.8,9114.4,0.57,-0.16,False,False,False,38.0,19.0
+sub-000175,mild,hippocampus (L+R),hippocampus_mm3,8932.1,8997.7,0.73,0.0,False,False,False,23.0,15.0
+sub-000179,mild,hippocampus (L+R),hippocampus_mm3,7864.7,7878.8,0.18,-0.55,False,False,False,12.0,19.0
+sub-000183,mild,hippocampus (L+R),hippocampus_mm3,9743.1,9870.2,1.3,0.56,False,False,False,117.0,128.0
+sub-003617,mild,hippocampus (L+R),hippocampus_mm3,8784.2,8875.4,1.04,0.3,False,False,False,34.0,25.0
+sub-009673,mild,hippocampus (L+R),hippocampus_mm3,9179.8,9048.3,-1.43,-2.13,False,False,False,19.0,14.0
+sub-010769,mild,hippocampus (L+R),hippocampus_mm3,8683.4,8766.8,0.96,0.22,False,False,False,67.0,15.0
+sub-012059,mild,hippocampus (L+R),hippocampus_mm3,7708.1,7541.7,-2.16,-2.84,False,False,False,55.0,22.0
+sub-012322,mild,hippocampus (L+R),hippocampus_mm3,7937.3,8031.3,1.18,0.44,False,False,False,58.0,14.0
+sub-016504,mild,hippocampus (L+R),hippocampus_mm3,8418.3,8537.9,1.42,0.67,False,False,False,113.0,14.0
+sub-067018,mild,hippocampus (L+R),hippocampus_mm3,8572.7,8453.7,-1.39,-2.09,False,False,False,19.0,21.0
+sub-089207,mild,hippocampus (L+R),hippocampus_mm3,8710.4,8731.1,0.24,-0.49,False,False,False,44.0,31.0
+sub-107738,mild,hippocampus (L+R),hippocampus_mm3,10387.3,10583.0,1.88,1.13,False,False,False,84.0,20.0
+sub-108142,mild,hippocampus (L+R),hippocampus_mm3,9043.2,9244.9,2.23,1.47,False,False,False,24.0,16.0
+sub-118003,mild,hippocampus (L+R),hippocampus_mm3,8669.7,8603.1,-0.77,-1.48,False,False,False,46.0,12.0
+sub-122916,mild,hippocampus (L+R),hippocampus_mm3,8042.7,7844.6,-2.46,-3.14,False,False,False,19.0,17.0
+sub-000103,moderate,global mean thickness,mean_thickness_mm,2.572,2.516,-2.15,0.91,False,False,False,63.0,40.0
+sub-000148,moderate,global mean thickness,mean_thickness_mm,2.487,2.41,-3.1,0.21,False,False,False,48.0,19.0
+sub-000149,moderate,global mean thickness,mean_thickness_mm,2.371,2.317,-2.28,0.82,False,False,False,88.0,20.0
+sub-000159,moderate,global mean thickness,mean_thickness_mm,2.648,2.474,-6.55,-2.32,False,True,False,39.0,19.0
+sub-000175,moderate,global mean thickness,mean_thickness_mm,2.439,2.375,-2.62,0.57,False,False,False,29.0,15.0
+sub-000179,moderate,global mean thickness,mean_thickness_mm,2.337,2.253,-3.59,-0.15,False,False,False,29.0,19.0
+sub-000183,moderate,global mean thickness,mean_thickness_mm,2.573,2.484,-3.45,-0.04,False,False,False,234.0,128.0
+sub-003617,moderate,global mean thickness,mean_thickness_mm,2.408,2.476,2.84,4.59,True,True,True,31.0,25.0
+sub-009673,moderate,global mean thickness,mean_thickness_mm,2.596,2.506,-3.46,-0.05,False,False,False,312.0,14.0
+sub-010769,moderate,global mean thickness,mean_thickness_mm,2.534,2.446,-3.46,-0.05,False,False,False,115.0,15.0
+sub-012059,moderate,global mean thickness,mean_thickness_mm,2.561,2.488,-2.86,0.4,False,False,False,32.0,22.0
+sub-012322,moderate,global mean thickness,mean_thickness_mm,2.413,2.317,-3.98,-0.43,False,False,False,47.0,14.0
+sub-016504,moderate,global mean thickness,mean_thickness_mm,2.625,2.474,-5.74,-1.73,False,False,False,189.0,14.0
+sub-067018,moderate,global mean thickness,mean_thickness_mm,2.519,2.434,-3.4,-0.01,False,False,False,52.0,21.0
+sub-089207,moderate,global mean thickness,mean_thickness_mm,2.555,2.468,-3.39,0.01,False,False,False,38.0,31.0
+sub-105822,moderate,global mean thickness,mean_thickness_mm,2.362,2.336,-1.1,1.69,False,False,False,133.0,17.0
+sub-107738,moderate,global mean thickness,mean_thickness_mm,2.397,2.342,-2.3,0.81,False,False,False,92.0,20.0
+sub-108142,moderate,global mean thickness,mean_thickness_mm,2.532,2.56,1.09,3.3,False,True,False,41.0,16.0
+sub-118003,moderate,global mean thickness,mean_thickness_mm,2.513,2.401,-4.45,-0.78,False,False,False,64.0,12.0
+sub-122916,moderate,global mean thickness,mean_thickness_mm,2.623,2.476,-5.62,-1.64,False,False,False,81.0,17.0
+sub-000103,moderate,rostral middle frontal,rmfg_mm,2.54,2.47,-2.74,-0.7,False,False,False,63.0,40.0
+sub-000148,moderate,rostral middle frontal,rmfg_mm,2.316,2.256,-2.57,-0.65,False,False,False,48.0,19.0
+sub-000149,moderate,rostral middle frontal,rmfg_mm,2.21,2.268,2.63,0.67,False,False,False,88.0,20.0
+sub-000159,moderate,rostral middle frontal,rmfg_mm,2.455,2.335,-4.93,-1.26,False,False,False,39.0,19.0
+sub-000175,moderate,rostral middle frontal,rmfg_mm,2.359,2.296,-2.65,-0.67,False,False,False,29.0,15.0
+sub-000179,moderate,rostral middle frontal,rmfg_mm,2.356,2.287,-2.95,-0.75,False,False,False,29.0,19.0
+sub-000183,moderate,rostral middle frontal,rmfg_mm,2.508,2.487,-0.86,-0.22,False,False,False,234.0,128.0
+sub-003617,moderate,rostral middle frontal,rmfg_mm,2.351,2.423,3.08,0.79,False,False,False,31.0,25.0
+sub-009673,moderate,rostral middle frontal,rmfg_mm,2.531,2.574,1.7,0.44,False,False,False,312.0,14.0
+sub-010769,moderate,rostral middle frontal,rmfg_mm,2.574,2.562,-0.45,-0.11,False,False,False,115.0,15.0
+sub-012059,moderate,rostral middle frontal,rmfg_mm,2.434,2.409,-1.01,-0.25,False,False,False,32.0,22.0
+sub-012322,moderate,rostral middle frontal,rmfg_mm,2.283,2.294,0.48,0.13,False,False,False,47.0,14.0
+sub-016504,moderate,rostral middle frontal,rmfg_mm,2.379,2.501,5.13,1.31,False,False,False,189.0,14.0
+sub-067018,moderate,rostral middle frontal,rmfg_mm,2.321,2.355,1.46,0.38,False,False,False,52.0,21.0
+sub-089207,moderate,rostral middle frontal,rmfg_mm,2.355,2.365,0.42,0.11,False,False,False,38.0,31.0
+sub-105822,moderate,rostral middle frontal,rmfg_mm,2.121,2.534,19.5,4.99,True,True,True,133.0,17.0
+sub-107738,moderate,rostral middle frontal,rmfg_mm,2.213,2.091,-5.53,-1.41,False,False,False,92.0,20.0
+sub-108142,moderate,rostral middle frontal,rmfg_mm,2.347,2.458,4.75,1.22,False,False,False,41.0,16.0
+sub-118003,moderate,rostral middle frontal,rmfg_mm,2.441,2.322,-4.84,-1.23,False,False,False,64.0,12.0
+sub-122916,moderate,rostral middle frontal,rmfg_mm,2.485,2.546,2.45,0.63,False,False,False,81.0,17.0
+sub-000103,moderate,superior temporal,stg_mm,3.004,2.837,-5.56,-0.01,False,False,False,63.0,40.0
+sub-000148,moderate,superior temporal,stg_mm,2.721,2.628,-3.38,0.46,False,False,False,48.0,19.0
+sub-000149,moderate,superior temporal,stg_mm,2.728,2.54,-6.87,-0.3,False,False,False,88.0,20.0
+sub-000159,moderate,superior temporal,stg_mm,3.191,2.891,-9.4,-0.84,False,False,False,39.0,19.0
+sub-000175,moderate,superior temporal,stg_mm,2.822,2.72,-3.61,0.41,False,False,False,29.0,15.0
+sub-000179,moderate,superior temporal,stg_mm,2.717,2.574,-5.26,0.05,False,False,False,29.0,19.0
+sub-000183,moderate,superior temporal,stg_mm,3.042,2.8,-7.92,-0.52,False,False,False,234.0,128.0
+sub-003617,moderate,superior temporal,stg_mm,2.837,2.805,-1.11,0.95,False,False,False,31.0,25.0
+sub-009673,moderate,superior temporal,stg_mm,3.038,2.51,-17.36,-2.57,False,False,False,312.0,14.0
+sub-010769,moderate,superior temporal,stg_mm,2.766,2.457,-11.19,-1.23,False,False,False,115.0,15.0
+sub-012059,moderate,superior temporal,stg_mm,2.957,2.796,-5.46,0.01,False,False,False,32.0,22.0
+sub-012322,moderate,superior temporal,stg_mm,2.897,2.755,-4.92,0.13,False,False,False,47.0,14.0
+sub-016504,moderate,superior temporal,stg_mm,3.103,2.463,-20.6,-3.27,False,True,False,189.0,14.0
+sub-067018,moderate,superior temporal,stg_mm,2.964,2.837,-4.3,0.26,False,False,False,52.0,21.0
+sub-089207,moderate,superior temporal,stg_mm,3.053,2.926,-4.14,0.3,False,False,False,38.0,31.0
+sub-105822,moderate,superior temporal,stg_mm,2.737,2.423,-11.47,-1.29,False,False,False,133.0,17.0
+sub-107738,moderate,superior temporal,stg_mm,2.821,2.772,-1.7,0.83,False,False,False,92.0,20.0
+sub-108142,moderate,superior temporal,stg_mm,2.812,2.829,0.59,1.32,False,False,False,41.0,16.0
+sub-118003,moderate,superior temporal,stg_mm,2.841,2.554,-10.1,-1.0,False,False,False,64.0,12.0
+sub-122916,moderate,superior temporal,stg_mm,3.04,2.665,-12.32,-1.48,False,False,False,81.0,17.0
+sub-000103,moderate,temporal pole,tpole_mm,3.97,3.012,-24.12,-0.3,False,False,False,63.0,40.0
+sub-000148,moderate,temporal pole,tpole_mm,3.389,2.779,-18.01,0.26,False,False,False,48.0,19.0
+sub-000149,moderate,temporal pole,tpole_mm,3.532,2.739,-22.45,-0.15,False,False,False,88.0,20.0
+sub-000159,moderate,temporal pole,tpole_mm,3.833,2.777,-27.54,-0.61,False,False,False,39.0,19.0
+sub-000175,moderate,temporal pole,tpole_mm,3.734,3.508,-6.07,1.34,False,False,False,29.0,15.0
+sub-000179,moderate,temporal pole,tpole_mm,3.312,2.76,-16.67,0.38,False,False,False,29.0,19.0
+sub-000183,moderate,temporal pole,tpole_mm,3.528,2.849,-19.25,0.15,False,False,False,234.0,128.0
+sub-003617,moderate,temporal pole,tpole_mm,3.495,3.486,-0.27,1.87,False,False,False,31.0,25.0
+sub-009673,moderate,temporal pole,tpole_mm,3.744,2.459,-34.33,-1.22,False,False,False,312.0,14.0
+sub-010769,moderate,temporal pole,tpole_mm,3.884,2.537,-34.68,-1.25,False,False,False,115.0,15.0
+sub-012059,moderate,temporal pole,tpole_mm,3.58,3.383,-5.49,1.39,False,False,False,32.0,22.0
+sub-012322,moderate,temporal pole,tpole_mm,3.798,2.862,-24.64,-0.34,False,False,False,47.0,14.0
+sub-016504,moderate,temporal pole,tpole_mm,3.912,2.774,-29.08,-0.75,False,False,False,189.0,14.0
+sub-067018,moderate,temporal pole,tpole_mm,3.873,3.279,-15.36,0.5,False,False,False,52.0,21.0
+sub-089207,moderate,temporal pole,tpole_mm,4.069,3.088,-24.09,-0.29,False,False,False,38.0,31.0
+sub-105822,moderate,temporal pole,tpole_mm,3.909,2.774,-29.04,-0.74,False,False,False,133.0,17.0
+sub-107738,moderate,temporal pole,tpole_mm,3.586,3.282,-8.46,1.12,False,False,False,92.0,20.0
+sub-108142,moderate,temporal pole,tpole_mm,3.673,3.422,-6.83,1.27,False,False,False,41.0,16.0
+sub-118003,moderate,temporal pole,tpole_mm,3.579,2.202,-38.48,-1.6,False,False,False,64.0,12.0
+sub-122916,moderate,temporal pole,tpole_mm,3.719,3.17,-14.78,0.55,False,False,False,81.0,17.0
+sub-000103,moderate,caudate (L+R),caudate_mm3,8298.7,8200.0,-1.19,-1.4,False,False,False,63.0,40.0
+sub-000148,moderate,caudate (L+R),caudate_mm3,7329.5,7316.1,-0.18,-0.49,False,False,False,48.0,19.0
+sub-000149,moderate,caudate (L+R),caudate_mm3,6824.1,6800.2,-0.35,-0.64,False,False,False,88.0,20.0
+sub-000159,moderate,caudate (L+R),caudate_mm3,7989.8,8022.3,0.41,0.05,False,False,False,39.0,19.0
+sub-000175,moderate,caudate (L+R),caudate_mm3,8694.4,8627.7,-0.77,-1.02,False,False,False,29.0,15.0
+sub-000179,moderate,caudate (L+R),caudate_mm3,7159.9,7329.3,2.37,1.83,False,False,False,29.0,19.0
+sub-000183,moderate,caudate (L+R),caudate_mm3,8390.2,8425.2,0.42,0.06,False,False,False,234.0,128.0
+sub-003617,moderate,caudate (L+R),caudate_mm3,7598.6,7684.9,1.14,0.71,False,False,False,31.0,25.0
+sub-009673,moderate,caudate (L+R),caudate_mm3,7963.5,730.6,-90.83,-82.78,True,True,True,312.0,14.0
+sub-010769,moderate,caudate (L+R),caudate_mm3,8195.4,8062.0,-1.63,-1.8,False,False,False,115.0,15.0
+sub-012059,moderate,caudate (L+R),caudate_mm3,8354.4,8401.8,0.57,0.19,False,False,False,32.0,22.0
+sub-012322,moderate,caudate (L+R),caudate_mm3,7681.8,7648.4,-0.43,-0.72,False,False,False,47.0,14.0
+sub-016504,moderate,caudate (L+R),caudate_mm3,9158.1,8912.2,-2.69,-2.76,False,True,False,189.0,14.0
+sub-067018,moderate,caudate (L+R),caudate_mm3,8539.9,8536.0,-0.05,-0.36,False,False,False,52.0,21.0
+sub-089207,moderate,caudate (L+R),caudate_mm3,8883.6,8910.6,0.3,-0.05,False,False,False,38.0,31.0
+sub-105822,moderate,caudate (L+R),caudate_mm3,6118.3,6231.8,1.86,1.36,False,False,False,133.0,17.0
+sub-107738,moderate,caudate (L+R),caudate_mm3,10034.7,10107.3,0.72,0.33,False,False,False,92.0,20.0
+sub-108142,moderate,caudate (L+R),caudate_mm3,8069.5,8123.8,0.67,0.29,False,False,False,41.0,16.0
+sub-118003,moderate,caudate (L+R),caudate_mm3,6492.5,6669.8,2.73,2.16,False,True,False,64.0,12.0
+sub-122916,moderate,caudate (L+R),caudate_mm3,6662.4,6706.8,0.67,0.28,False,False,False,81.0,17.0
+sub-000103,moderate,hippocampus (L+R),hippocampus_mm3,9608.4,9722.1,1.18,0.27,False,False,False,63.0,40.0
+sub-000148,moderate,hippocampus (L+R),hippocampus_mm3,8752.9,8886.4,1.53,0.55,False,False,False,48.0,19.0
+sub-000149,moderate,hippocampus (L+R),hippocampus_mm3,8921.2,8622.8,-3.34,-3.36,False,True,False,88.0,20.0
+sub-000159,moderate,hippocampus (L+R),hippocampus_mm3,9062.8,8886.9,-1.94,-2.23,False,False,False,39.0,19.0
+sub-000175,moderate,hippocampus (L+R),hippocampus_mm3,8932.1,9073.0,1.58,0.59,False,False,False,29.0,15.0
+sub-000179,moderate,hippocampus (L+R),hippocampus_mm3,7864.7,7790.8,-0.94,-1.43,False,False,False,29.0,19.0
+sub-000183,moderate,hippocampus (L+R),hippocampus_mm3,9743.1,9761.7,0.19,-0.52,False,False,False,234.0,128.0
+sub-003617,moderate,hippocampus (L+R),hippocampus_mm3,8784.2,8948.6,1.87,0.83,False,False,False,31.0,25.0
+sub-009673,moderate,hippocampus (L+R),hippocampus_mm3,9179.8,4634.4,-49.52,-40.4,True,True,True,312.0,14.0
+sub-010769,moderate,hippocampus (L+R),hippocampus_mm3,8683.4,8777.6,1.08,0.2,False,False,False,115.0,15.0
+sub-012059,moderate,hippocampus (L+R),hippocampus_mm3,7708.1,7839.7,1.71,0.7,False,False,False,32.0,22.0
+sub-012322,moderate,hippocampus (L+R),hippocampus_mm3,7937.3,8159.8,2.8,1.57,False,False,False,47.0,14.0
+sub-016504,moderate,hippocampus (L+R),hippocampus_mm3,8418.3,8401.8,-0.2,-0.83,False,False,False,189.0,14.0
+sub-067018,moderate,hippocampus (L+R),hippocampus_mm3,8572.7,8643.8,0.83,-0.01,False,False,False,52.0,21.0
+sub-089207,moderate,hippocampus (L+R),hippocampus_mm3,8710.4,8784.6,0.85,0.01,False,False,False,38.0,31.0
+sub-105822,moderate,hippocampus (L+R),hippocampus_mm3,7761.6,7823.5,0.8,-0.03,False,False,False,133.0,17.0
+sub-107738,moderate,hippocampus (L+R),hippocampus_mm3,10387.3,10371.9,-0.15,-0.79,False,False,False,92.0,20.0
+sub-108142,moderate,hippocampus (L+R),hippocampus_mm3,9043.2,9107.0,0.71,-0.11,False,False,False,41.0,16.0
+sub-118003,moderate,hippocampus (L+R),hippocampus_mm3,8669.7,8813.2,1.66,0.65,False,False,False,64.0,12.0
+sub-122916,moderate,hippocampus (L+R),hippocampus_mm3,8042.7,8500.4,5.69,3.89,True,True,False,81.0,17.0

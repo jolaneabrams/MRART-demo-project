@@ -1,0 +1,197 @@
+[2026-09-14 17:24:37] Scan folder     = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/ds004173
+[2026-09-14 17:24:37] Output folder   = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects
+[2026-09-14 17:24:37] Log folder      = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs
+[2026-09-14 17:24:37] At once         = 1
+[2026-09-14 17:24:37] Only subject    = sub-000103
+[2026-09-14 17:24:37] FreeSurfer      = /Applications/freesurfer/8.2.0
+[2026-09-14 17:24:37] Found 3 scan file(s)
+[2026-09-14 17:24:37] [run  ] mrart_sub-000103_acq-standard_T1w
+[2026-09-14 17:24:37] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:25:37] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:26:37] [run  ] mrart_sub-000103_acq-headmotion1_T1w
+[2026-09-14 17:26:37] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:27:37] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:28:37] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:29:37] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:30:37] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:31:37] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:32:38] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:33:38] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:34:38] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:35:38] Already running 1 scan(s). Waiting 60 seconds...
+[2026-09-14 17:36:38] [run  ] mrart_sub-000103_acq-headmotion2_T1w
+[2026-09-17 12:00:45] Scan folder     = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/ds004173
+[2026-09-17 12:00:45] Output folder   = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects
+[2026-09-17 12:00:45] Log folder      = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs
+[2026-09-17 12:00:45] At once         = 1
+[2026-09-17 12:00:45] Only subject    = sub-000103
+[2026-09-17 12:00:45] FreeSurfer      = /Applications/freesurfer/8.2.0
+[2026-09-17 12:00:45] Found 3 scan file(s)
+[2026-09-17 12:00:45] [retry] mrart_sub-000103_acq-standard_T1w previously failed; will resume or restart
+[2026-09-17 12:00:45] [resume] mrart_sub-000103_acq-standard_T1w (unfinished folder found; continuing without importing the scan again)
+[2026-09-17 12:00:45] [run  ] mrart_sub-000103_acq-standard_T1w
+[2026-09-17 12:00:45] [retry] mrart_sub-000103_acq-headmotion1_T1w previously failed; will resume or restart
+[2026-09-17 12:00:45] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-17 12:01:45] [resume] mrart_sub-000103_acq-headmotion1_T1w (unfinished folder found; continuing without importing the scan again)
+[2026-09-17 12:01:45] [run  ] mrart_sub-000103_acq-headmotion1_T1w
+[2026-09-17 12:01:45] [skip] mrart_sub-000103_acq-headmotion2_T1w already finished
+[2026-09-17 12:01:45] Queued everything (found=3, started_or_resumed=2, already_done=1). Waiting for jobs to finish...
+[2026-09-17 13:54:55] ==================================================
+[2026-09-17 13:54:55] Finished OK : 3
+[2026-09-17 13:54:55] Failed      : 0
+[2026-09-17 13:54:55] No record   : 0
+[2026-09-17 13:54:55] Fail list   : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/failed_subjects.txt
+[2026-09-17 13:54:55] OK list     : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/succeeded_subjects.txt
+[2026-09-17 13:54:55] Batch log   : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/batch_output.log
+[2026-09-17 13:54:55] ==================================================
+[2026-09-17 14:18:44] Scan folder     = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/ds004173
+[2026-09-17 14:18:44] Output folder   = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects
+[2026-09-17 14:18:44] Log folder      = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs
+[2026-09-17 14:18:44] At once         = 1
+[2026-09-17 14:18:44] Only subject    = sub-000103
+[2026-09-17 14:18:44] FreeSurfer      = /Applications/freesurfer/8.2.0
+[2026-09-17 14:18:44] Found 3 scan file(s)
+[2026-09-17 14:18:44] [retry] mrart_sub-000103_acq-standard_T1w previously failed; will resume or restart
+[2026-09-17 14:18:44] [resume] mrart_sub-000103_acq-standard_T1w (unfinished folder found; continuing without importing the scan again)
+[2026-09-17 14:18:44] [run  ] mrart_sub-000103_acq-standard_T1w
+[2026-09-17 14:18:44] [skip] mrart_sub-000103_acq-headmotion1_T1w already finished
+[2026-09-17 14:18:44] [skip] mrart_sub-000103_acq-headmotion2_T1w already finished
+[2026-09-17 14:18:44] Queued everything (found=3, started_or_resumed=1, already_done=2). Waiting for jobs to finish...
+[2026-09-17 16:00:34] ==================================================
+[2026-09-17 16:00:34] Finished OK : 3
+[2026-09-17 16:00:34] Failed      : 0
+[2026-09-17 16:00:34] No record   : 0
+[2026-09-17 16:00:34] Fail list   : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/failed_subjects.txt
+[2026-09-17 16:00:34] OK list     : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/succeeded_subjects.txt
+[2026-09-17 16:00:34] Batch log   : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/batch_output.log
+[2026-09-17 16:00:34] ==================================================
+[2026-09-17 16:41:14] Scan folder     = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/ds004173
+[2026-09-17 16:41:14] Output folder   = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects
+[2026-09-17 16:41:14] Log folder      = /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs
+[2026-09-17 16:41:14] At once         = 1
+[2026-09-17 16:41:14] Only subject    = all
+[2026-09-17 16:41:14] FreeSurfer      = /Applications/freesurfer/8.2.0
+[2026-09-17 16:41:14] Found 59 scan file(s)
+[2026-09-17 16:41:14] [skip] mrart_sub-000103_acq-standard_T1w already finished
+[2026-09-17 16:41:14] [run  ] mrart_sub-000148_acq-standard_T1w
+[2026-09-17 16:41:14] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-17 18:05:16] [run  ] mrart_sub-000149_acq-standard_T1w
+[2026-09-17 18:05:16] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-17 19:35:17] [run  ] mrart_sub-000159_acq-standard_T1w
+[2026-09-17 19:35:17] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-17 21:11:19] [run  ] mrart_sub-000175_acq-standard_T1w
+[2026-09-17 21:11:19] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-17 22:58:21] [run  ] mrart_sub-000179_acq-standard_T1w
+[2026-09-17 22:58:21] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 00:25:22] [run  ] mrart_sub-000183_acq-standard_T1w
+[2026-09-18 00:25:22] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 02:21:24] [run  ] mrart_sub-003617_acq-standard_T1w
+[2026-09-18 02:21:24] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 03:51:26] [run  ] mrart_sub-009673_acq-standard_T1w
+[2026-09-18 03:51:26] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 05:25:27] [run  ] mrart_sub-010769_acq-standard_T1w
+[2026-09-18 05:25:27] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 07:03:29] [run  ] mrart_sub-012059_acq-standard_T1w
+[2026-09-18 07:03:29] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 08:30:30] [run  ] mrart_sub-012322_acq-standard_T1w
+[2026-09-18 08:30:30] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 10:07:32] [run  ] mrart_sub-016504_acq-standard_T1w
+[2026-09-18 10:07:32] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 11:42:33] [run  ] mrart_sub-067018_acq-standard_T1w
+[2026-09-18 11:42:33] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 13:13:35] [run  ] mrart_sub-089207_acq-standard_T1w
+[2026-09-18 13:13:35] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 14:51:37] [run  ] mrart_sub-105822_acq-standard_T1w
+[2026-09-18 14:51:37] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 16:14:38] [run  ] mrart_sub-107738_acq-standard_T1w
+[2026-09-18 16:14:38] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 18:04:41] [run  ] mrart_sub-108142_acq-standard_T1w
+[2026-09-18 18:04:41] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 19:45:43] [run  ] mrart_sub-118003_acq-standard_T1w
+[2026-09-18 19:45:43] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 21:08:44] [run  ] mrart_sub-122916_acq-standard_T1w
+[2026-09-18 21:08:44] [skip] mrart_sub-000103_acq-headmotion1_T1w already finished
+[2026-09-18 21:08:44] [skip] mrart_sub-000103_acq-headmotion2_T1w already finished
+[2026-09-18 21:08:44] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-18 22:34:46] [run  ] mrart_sub-000148_acq-headmotion1_T1w
+[2026-09-18 22:34:46] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 00:00:47] [run  ] mrart_sub-000148_acq-headmotion2_T1w
+[2026-09-19 00:00:47] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 01:21:49] [run  ] mrart_sub-000149_acq-headmotion1_T1w
+[2026-09-19 01:21:49] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 02:56:50] [run  ] mrart_sub-000149_acq-headmotion2_T1w
+[2026-09-19 02:56:50] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 04:33:52] [run  ] mrart_sub-000159_acq-headmotion1_T1w
+[2026-09-19 04:33:52] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 06:06:53] [run  ] mrart_sub-000159_acq-headmotion2_T1w
+[2026-09-19 06:06:53] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 07:39:55] [run  ] mrart_sub-000175_acq-headmotion1_T1w
+[2026-09-19 07:39:55] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 09:26:57] [run  ] mrart_sub-000175_acq-headmotion2_T1w
+[2026-09-19 09:26:57] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 11:13:58] [run  ] mrart_sub-000179_acq-headmotion1_T1w
+[2026-09-19 11:13:58] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 12:41:00] [run  ] mrart_sub-000179_acq-headmotion2_T1w
+[2026-09-19 12:41:00] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 14:08:01] [run  ] mrart_sub-000183_acq-headmotion1_T1w
+[2026-09-19 14:08:01] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 16:12:03] [run  ] mrart_sub-000183_acq-headmotion2_T1w
+[2026-09-19 16:12:03] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 18:26:06] [run  ] mrart_sub-003617_acq-headmotion1_T1w
+[2026-09-19 18:26:06] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 20:02:07] [run  ] mrart_sub-003617_acq-headmotion2_T1w
+[2026-09-19 20:02:07] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 21:26:09] [run  ] mrart_sub-009673_acq-headmotion1_T1w
+[2026-09-19 21:26:09] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-19 23:01:10] [run  ] mrart_sub-009673_acq-headmotion2_T1w
+[2026-09-19 23:01:10] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 01:04:12] [run  ] mrart_sub-010769_acq-headmotion1_T1w
+[2026-09-20 01:04:12] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 02:44:14] [run  ] mrart_sub-010769_acq-headmotion2_T1w
+[2026-09-20 02:44:14] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 04:23:16] [run  ] mrart_sub-012059_acq-headmotion1_T1w
+[2026-09-20 04:23:16] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 05:58:17] [run  ] mrart_sub-012059_acq-headmotion2_T1w
+[2026-09-20 05:58:17] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 07:22:19] [run  ] mrart_sub-012322_acq-headmotion1_T1w
+[2026-09-20 07:22:19] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 09:04:20] [run  ] mrart_sub-012322_acq-headmotion2_T1w
+[2026-09-20 09:04:20] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 10:41:22] [run  ] mrart_sub-016504_acq-headmotion1_T1w
+[2026-09-20 10:41:22] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 12:24:24] [run  ] mrart_sub-016504_acq-headmotion2_T1w
+[2026-09-20 12:24:24] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 14:08:25] [run  ] mrart_sub-067018_acq-headmotion1_T1w
+[2026-09-20 14:08:25] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 15:44:27] [run  ] mrart_sub-067018_acq-headmotion2_T1w
+[2026-09-20 15:44:27] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 17:22:28] [run  ] mrart_sub-089207_acq-headmotion1_T1w
+[2026-09-20 17:22:29] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 18:59:30] [run  ] mrart_sub-089207_acq-headmotion2_T1w
+[2026-09-20 18:59:30] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 20:44:32] [run  ] mrart_sub-105822_acq-headmotion2_T1w
+[2026-09-20 20:44:32] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-20 22:12:33] [run  ] mrart_sub-107738_acq-headmotion1_T1w
+[2026-09-20 22:12:33] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-21 00:00:35] [run  ] mrart_sub-107738_acq-headmotion2_T1w
+[2026-09-21 00:00:35] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-21 01:48:37] [run  ] mrart_sub-108142_acq-headmotion1_T1w
+[2026-09-21 01:48:37] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-21 03:24:39] [run  ] mrart_sub-108142_acq-headmotion2_T1w
+[2026-09-21 03:24:39] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-21 05:01:40] [run  ] mrart_sub-118003_acq-headmotion1_T1w
+[2026-09-21 05:01:40] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-21 06:24:42] [run  ] mrart_sub-118003_acq-headmotion2_T1w
+[2026-09-21 06:24:42] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-21 07:54:43] [run  ] mrart_sub-122916_acq-headmotion1_T1w
+[2026-09-21 07:54:43] One scan is already running. The next scan will start when it finishes (this can take several hours).
+[2026-09-21 09:18:45] [run  ] mrart_sub-122916_acq-headmotion2_T1w
+[2026-09-21 09:18:45] Queued everything (found=59, started_or_resumed=56, already_done=3). Waiting for jobs to finish...
+[2026-09-21 10:41:01] ==================================================
+[2026-09-21 10:41:01] Finished OK : 59
+[2026-09-21 10:41:01] Failed      : 0
+[2026-09-21 10:41:01] No record   : 0
+[2026-09-21 10:41:01] Fail list   : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/failed_subjects.txt
+[2026-09-21 10:41:01] OK list     : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/succeeded_subjects.txt
+[2026-09-21 10:41:01] Batch log   : /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/logs/batch_output.log
+[2026-09-21 10:41:01] ==================================================
