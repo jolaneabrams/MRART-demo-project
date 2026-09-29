@@ -229,17 +229,20 @@ Per-subject logs are stored in `logs/`. Batch-generated failure list: `logs/fail
 
 ## Status
 
-- Environment configured (XQuartz, FreeSurfer 8.2.0, Python venv)
-- 20 subjects downloaded (59 T1 scans; no mild scan for `sub-105822`)
-- Subject ID schema verified (6-digit non-sequential)
-- `recon-all -all` finished on all 59 scans (FreeSurfer 8.2.0, `MAX_PAR=1`)
-- Mean scan time 1.7 h (range 83–134 min); batch wall clock 90 h for 55 scans (17–21 Sep 2026)
-- Thickness and volume tables extracted: `tables/lh.aparc.thickness.csv`, `tables/rh.aparc.thickness.csv`, `tables/aseg.volume.csv`
-- Outlier screen run (234 rows: 6 measures × 19 mild pairs + 6 × 20 moderate pairs)
-- Surface QC checklist written (21–29 Sep 2026); FreeView pass/fail calls go in `analysis/QC_checklist.xlsx`
-- Raw data: `ds004173/` (local, not in git)
-- Outputs: `fs_subjects/` (local, ~25 GB, not in git)
-- Success list: `logs/succeeded_subjects.txt`
+- ✅ Environment configured (XQuartz, FreeSurfer 8.2.0, Python venv)
+- ✅ 20 subjects downloaded (59 T1 scans; no mild scan for `sub-105822`)
+- ✅ Subject ID schema verified (6-digit non-sequential)
+- ✅ `recon-all -all` finished on all 59 scans (FreeSurfer 8.2.0, `MAX_PAR=1`)
+- ✅ Mean scan time 1.7 h (range 83–134 min); batch wall clock 90 h for 55 scans (17–21 Sep 2026)
+- ✅ Thickness and volume tables extracted (`tables/lh.aparc.thickness.csv`, `tables/rh.aparc.thickness.csv`, `tables/aseg.volume.csv`)
+- ✅ Outlier screen run (234 rows: 6 measures × 19 mild pairs + 6 × 20 moderate pairs)
+- ✅ Surface QC checklist written (21–29 Sep 2026)
+- ⏳ Visual QC pass/fail calls in FreeView (`analysis/QC_checklist.xlsx` has a few Pass notes; most scans are still blank)
+- ⏳ ICC(3,1) reliability per region
+- ⏳ Figures: box plots, spaghetti plot, ICC bar chart (the outlier heatmap is already in `tables/outlier_screen_heatmap.png`)
+- 📁 Raw data: `ds004173/` (local, not in git)
+- 📁 Outputs: `fs_subjects/` (local, ~25 GB, not in git)
+- 📋 Success list: `logs/succeeded_subjects.txt`
 
 ## Next steps
 

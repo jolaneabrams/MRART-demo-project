@@ -184,3 +184,106 @@ mv ~/mrart_demo/fs_subjects/ds004173 ~/mrart_demo/
 #   Large R/A/S labels on the panes (~200) are not that box; invalid RAS snaps back.
 #   -ras on the command line wants millimetre RAS, not pane labels. -slice wants
 #   integer voxel indices of T1.mgz. Put flags so numbers are not parsed as filenames.
+
+# F. TABLES, OUTLIER SCREEN, CHECKLIST, README (21–29 Sep 2026)
+
+# Commit 8c32f54 (29 Sep): "Record the partial Reuter et al. 2015 replication,
+# the surface QC checklist, and the thickness outlier screen."
+# .Rhistory and ENIGMA_Cortical_QC_2.0.pdf stay untracked
+# (empty R session file and a third-party QC manual).
+
+# Thickness and volume tables (extracted 21 Sep, after the batch finished)
+#   tables/lh.aparc.thickness.csv
+#   tables/rh.aparc.thickness.csv
+#   tables/aseg.volume.csv
+#   59 scans. sub-105822 still has no mild (acq-headmotion1) row.
+
+# Outlier screen — triage, not exclusion
+#   Current script: analysis/outlier_screen.py (pandas, numpy, matplotlib)
+#   Earlier draft without the heatmap: analysis/outlier_screen1.py
+#   Notes on the design: analysis/Outlier detection.odt
+#   Within-subject percent change from that subject's still scan:
+#     100 * (motion - still) / still
+#   Separate contrasts: still→mild (19 pairs) and still→moderate (20 pairs)
+#   Six locked measures only:
+#     bilateral mean thickness, rostral middle frontal, superior temporal,
+#     temporal pole, caudate (L+R), hippocampus (L+R)
+#   Inclusion rule for the screen: Iglewicz–Hoaglin modified z
+#     |0.6745 * (x - median) / MAD| > 3.5
+#     median and MAD taken inside that measure and that contrast
+#   Tukey 1.5×IQR and ENIGMA-style z (±2.698) are extra columns.
+#   They are not a second way to drop a scan.
+#   Surface-hole count from aseg is copied onto each row and is not part of the flag.
+#   Outputs (26 Sep):
+#     tables/outlier_screen.csv        234 rows (6 × 19 mild + 6 × 20 moderate)
+#     tables/outlier_screen_pivot.csv  subject × condition
+#     tables/outlier_screen_heatmap.png
+
+# What the screen found (flags = re-review list)
+#   Robust flags: 7 of 234. Tukey flags: 15. ENIGMA flags: 4.
+#   Median percent change, mild / moderate:
+#     mean thickness          −2.81% / −3.40%
+#     rostral middle frontal  −2.10% / −0.02%
+#     superior temporal       −3.13% / −5.51%
+#     temporal pole           −9.18% / −20.85%   largest drift; not itself a flag
+#     caudate (L+R)           +0.06% / +0.36%
+#     hippocampus (L+R)       +0.73% / +0.84%
+#   A shift shared by the sample does not flag. Modified z is computed inside
+#   one measure and one contrast, so temporal pole can move ~21% and still
+#   sit near the median of that column.
+#   The 7 robust flags:
+#     sub-016504 mild      mean thickness −8.61% (z −3.60); superior temporal −10.07% (z −5.23)
+#     sub-003617 moderate  mean thickness +2.84% (z 4.59) — thicker, not thinner
+#     sub-009673 moderate  caudate −90.83% (z −82.78); hippocampus −49.52% (z −40.40)
+#     sub-105822 moderate  rostral middle frontal +19.50% (z 4.99)
+#                          (this subject has no mild scan)
+#     sub-122916 moderate  hippocampus +5.69% (z 3.89)
+#   sub-009673 moderate is the case the checklist is for: huge percent change,
+#   surfaces still present (section E), and QC_checklist.xlsx already notes
+#   "Pass (great contrast w/still)" on that headmotion2 scan. The flag sends
+#   it back to the slices. It does not fail the scan.
+
+# Written surface checklist (the inclusion rule)
+#   analysis/FreeSurfer_QC_checklist.docx
+#   Also pasted into README.md under Quality control.
+#   Reviewer Jolane Abrams, 21–29 Sep 2026, FreeSurfer 8.2.0, FreeView / XQuartz 2.8.6.
+#   Fail only if recon-all.done is missing, or a white/pial/wm/topology error
+#   hits a pre-specified ROI (the same six measures). Errors elsewhere are notes.
+#   Minor surface imperfections that spare those ROIs are not fails.
+#   Pass/fail calls from FreeView go in analysis/QC_checklist.xlsx.
+#   That sheet is mostly blank. Written Pass notes so far:
+#     sub-000103 standard
+#     sub-009673 headmotion2 ("great contrast w/still")
+#     sub-010769 headmotion2 ("another great contrast")
+#   Visual QC is not finished.
+
+# FreeView helpers committed with the same snapshot
+#   qc_reference/QC.pptx          deck updated (small binary change)
+#   qc_reference/view_scans.sh    white=blue, pial=red on T1.mgz;
+#                                 example SIDs are sub-000103 standard (commented)
+#                                 and sub-000103 headmotion2
+
+# recon-all logs now in git (they were local-only before this commit)
+#   logs/subjects.txt            59 scan IDs
+#   logs/failed_subjects.txt     empty
+#   logs/batch_output.log
+#   one .log and one .exitcode per finished scan (no headmotion1 for sub-105822)
+#   fs_subjects/ and ds004173/ still gitignored
+
+# README
+#   States this is a partial replication of Reuter et al., NeuroImage 2015
+#   (doi:10.1016/j.neuroimage.2014.12.006): 12 volunteers, FreeSurfer 5.3 plus
+#   VBM8 and Siena, motion in mm/min, bias survived QC.
+#   This project: MR-ART, 20 subjects, FreeSurfer 8.2.0 only, condition labels
+#   (still / mild / moderate) so effect sizes are not in %/mm/min, six locked ROIs.
+#   What is meant to replicate: motion → thinner cortex; regional differences
+#   (temporal pole largest here); QC exclusion does not remove the bias.
+#   The old unclosed ```bash fence after the download command is closed, so the
+#   rest of the README renders as headings instead of one code block.
+#   Status lines now include the tables and the screen. Still open: finish
+#   FreeView calls in QC_checklist.xlsx, ICC(3,1), box / spaghetti / ICC figures.
+
+# Next
+#   Finish the FreeView pass/fail column.
+#   Re-review the 7 robust flags on the slices before treating them as kept.
+#   ICC(3,1) and the remaining figures.
