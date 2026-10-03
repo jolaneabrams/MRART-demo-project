@@ -11,3 +11,7 @@ __pycache__/
 
 # OS clutter
 .DS_Store
+
+# Local session file and a third-party QC manual — not project output
+.Rhistory
+ENIGMA_Cortical_QC_2.0.pdf
