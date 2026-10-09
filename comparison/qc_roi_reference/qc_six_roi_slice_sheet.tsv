@@ -1,0 +1,32 @@
+roi	kind	plane	side	open_first	also_on_this_plane_in_16_of_20	best_slice_range_across_20_subjects	where_to_look
+bilateral mean thickness	thickness	axial	both	110	50 60 70 80 90 100 110 120 130 140	50-140	Whole cortical ribbon. Axial 80 is dorsal, 110 is the lateral surface, 140 is ventral temporal. Medial wall is not cortex.
+bilateral mean thickness	thickness	coronal	both	120	40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190	40-190	Whole cortical ribbon. Coronal 80 is posterior, 120 is central, 170 is frontal.
+bilateral mean thickness	thickness	sagittal	L	170	130 140 150 160 170 180 190	130-190	Left lateral cortex. High sagittal index is left. 127 is midline.
+bilateral mean thickness	thickness	sagittal	R	90	70 80 90 100 110 120 130	70-130	Right lateral cortex. Low sagittal index is right.
+rostral middle frontal	thickness	axial	both	80	70 80 90 100	60-90	Anterior-lateral ribbon on a high slice. Toward the top of the axial image (anterior).
+rostral middle frontal	thickness	coronal	L	170	150 160 170 180	150-190	Lateral frontal ribbon. Coronal 170 still shows the eyes.
+rostral middle frontal	thickness	coronal	R	180	150 160 170 180 190	150-200	Lateral frontal ribbon, slightly more anterior on the right in this sample.
+rostral middle frontal	thickness	sagittal	L	160	150 160 170	150-170	Lateral frontal ribbon above the Sylvian fissure, in the anterior half. Face points to the right of the sagittal image.
+rostral middle frontal	thickness	sagittal	R	100	90 100 110	90-110	Same landmark on the right hemisphere.
+superior temporal	thickness	axial	L	110	100 110 120 130	90-130	Lateral temporal gyrus. Axial 110-120 cuts across it.
+superior temporal	thickness	axial	R	110	100 110 120 130	100-130	Lateral temporal gyrus. Right median peak is 115, so 110 and 120 both matter.
+superior temporal	thickness	coronal	L	130	80 90 100 110 120 130 140 150	90-150	Long anterior-posterior gyrus. Bulk is near 130; it is still on the plane from 80 through 150.
+superior temporal	thickness	coronal	R	120	100 110 120 130 140 150	100-150	Lateral surface below the Sylvian fissure.
+superior temporal	thickness	sagittal	L	180	160 170 180 190	170-190	Most lateral left slices that still contain brain.
+superior temporal	thickness	sagittal	R	80	70 80 90 100	70-90	Most lateral right slices that still contain brain.
+temporal pole	thickness	axial	both	140	140	120-150	Only axial 140 hits the label in 16 of 20 subjects. Anterior temporal tissue beside the orbits, not the cerebellum at the bottom of the image. If the tip is off the slice, check 130 and 150.
+temporal pole	thickness	coronal	L	140	140 150	130-160	Anterior temporal tip, just behind the orbits.
+temporal pole	thickness	coronal	R	150	140 150	130-160	Anterior temporal tip, just behind the orbits.
+temporal pole	thickness	sagittal	L	150	150 160	150-160	Temporal tip at the lower right of the brain on the sagittal image (anterior and inferior).
+temporal pole	thickness	sagittal	R	100	100 110	100-110	Same landmark on the right hemisphere.
+caudate	volume	axial	L	100	90 100	80-110	Head of the caudate: gray bulge in the lateral wall of the frontal horn. Not outlined on these screenshots.
+caudate	volume	axial	R	100	100	80-110	Same landmark on the right. Axial 100 is the reliable plane.
+caudate	volume	coronal	L	140	110 120 130 140	120-150	Caudate head sitting in the lateral ventricle.
+caudate	volume	coronal	R	140	110 120 130 140 150	120-150	Caudate head sitting in the lateral ventricle.
+caudate	volume	sagittal	L	140	140	140-150	Comma-shaped gray beside the lateral ventricle. Left is almost always sagittal 140.
+caudate	volume	sagittal	R	110	110 120	110-120	Same landmark on the right.
+hippocampus	volume	axial	L	130	120	110-140	Medial temporal gray, inboard of the collateral sulcus. Open 120 and 130. Left peak is 130, but 120 is the plane shared by 16 of 20 subjects.
+hippocampus	volume	axial	R	130	120 130	110-140	Medial temporal gray.
+hippocampus	volume	coronal	both	120	100 110 120	110-130	Seahorse-shaped gray in the medial temporal lobe, under the choroid fissure.
+hippocampus	volume	sagittal	L	150	140 150 160	150-160	Curved gray along the medial temporal floor, behind the temporal pole.
+hippocampus	volume	sagittal	R	100	100 110	100-110	Same landmark on the right hemisphere.

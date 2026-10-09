@@ -2,10 +2,11 @@
 # Matched slices for one subject across still, mild, and moderate recon-all runs.
 # White surface is drawn in blue, pial surface in red, on T1.mgz.
 #
-# These volumes are LIA, so:
-#   axial    varies the middle index (inferior-superior)
-#   coronal  varies the third index  (anterior-posterior)
-#   sagittal varies the first index  (left-right)
+# These volumes are LIA. Filenames and FreeView viewport names use the
+# anatomical plane:
+#   axial    varies the inferior-superior index (second voxel axis)
+#   coronal  varies the anterior-posterior index (third voxel axis)
+#   sagittal varies the left-right index (first voxel axis)
 #
 # The same voxel index is not the same place in the brain once the head has
 # moved. Slice positions are chosen on the still scan and mapped into the
@@ -78,10 +79,11 @@ def clamp(v):
 
 still_dir = conds[0][0]
 M_still = read_lta(f"{still_dir}/mri/transforms/talairach.lta")
+# anatomical name, voxel axis, FreeView viewport
 planes = (
-    ("axial", 1),
-    ("coronal", 2),
-    ("sagittal", 0),
+    ("axial", 1, "axial"),
+    ("coronal", 2, "coronal"),
+    ("sagittal", 0, "sagittal"),
 )
 
 coords_path = f"{outdir}/slice_coords.tsv"
@@ -110,7 +112,7 @@ with open(coords_path, "w") as coords:
             cmd.write(f"-v {t1}\n")
             for path, color in surfs:
                 cmd.write(f"-f {path}:edgecolor={color}:edgethickness=2\n")
-            for plane, axis in planes:
+            for plane, axis, viewport in planes:
                 for idx in range(start, end + 1, step):
                     still = [center, center, center]
                     still[axis] = idx
@@ -119,7 +121,7 @@ with open(coords_path, "w") as coords:
                     sl = [clamp(xyz[0]), clamp(xyz[1]), clamp(xyz[2])]
                     png = f"{outdir}/{label}_{plane}_{idx}.png"
                     cmd.write(
-                        f"-viewport {plane} -slice {sl[0]} {sl[1]} {sl[2]} "
+                        f"-viewport {viewport} -slice {sl[0]} {sl[1]} {sl[2]} "
                         f"-viewsize 800 800 -ss {png} -noquit\n"
                     )
                     coords.write(

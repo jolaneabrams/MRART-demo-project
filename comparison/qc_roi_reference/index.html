@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Six QC regions</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0 auto;
+      max-width: 1180px;
+      padding: 32px 24px 64px;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      color: #1c1c1c;
+      background: #f7f6f3;
+    }
+    header { max-width: 72ch; }
+    h1 { font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 8px; }
+    h2 { font-size: 22px; font-weight: 600; margin: 0; }
+    p { line-height: 1.45; }
+    .lead { font-size: 17px; margin-top: 0; }
+    .meta { font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 13px; color: #555; }
+    section {
+      margin-top: 36px;
+      background: #fff;
+      border: 1px solid #e4e0d8;
+      padding: 18px 18px 8px;
+    }
+    .note { margin: 6px 0 14px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 18px;
+    }
+    figure { margin: 0 0 16px; }
+    img { width: 100%; height: auto; display: block; background: #111; }
+    figcaption {
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+    code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px; }
+    @media (max-width: 640px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Six QC regions</h1>
+    <p class="lead">Color is the FreeSurfer label on the still scan of sub-016504. The number is the still-scan index, so the same filename in every subject folder is this plane. On your slice screenshots the white surface is blue and the pial surface is red. Caudate and hippocampus are not outlined there.</p>
+    <p class="meta">Axial: anterior at the top, patient right on the left. Coronal: superior at the top. Sagittal: face points right. Open <code>comparison/slices_mrart_&lt;subject&gt;/{still,mld,mod}_&lt;plane&gt;_&lt;index&gt;.png</code>.</p>
+  </header>
+
+  <section>
+    <h2>Bilateral mean thickness</h2>
+    <p class="note">The whole cortical ribbon. The medial wall is not included. Sample a dorsal, a mid, and a ventral slice rather than one gyrus.</p>
+    <div class="grid">
+      <figure>
+        <img src="mean-thickness-axial.png" alt="Bilateral cortex highlighted on axial slice 110">
+        <figcaption>Axial 110<br><code>axial_110.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="mean-thickness-coronal.png" alt="Bilateral cortex highlighted on coronal slice 120">
+        <figcaption>Coronal 120<br><code>coronal_120.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="mean-thickness-sagittal-left.png" alt="Left cortex highlighted on sagittal slice 170">
+        <figcaption>Left sagittal 170<br><code>sagittal_170.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="mean-thickness-sagittal-right.png" alt="Right cortex highlighted on sagittal slice 90">
+        <figcaption>Right sagittal 90<br><code>sagittal_90.png</code></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Rostral middle frontal</h2>
+    <p class="note">Lateral frontal cortex, above the Sylvian fissure and behind the frontal pole. On the axial slice it is the anterior-lateral ribbon.</p>
+    <div class="grid">
+      <figure>
+        <img src="rostral-middle-frontal-axial.png" alt="Rostral middle frontal highlighted on axial slice 80">
+        <figcaption>Axial 80<br><code>axial_80.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="rostral-middle-frontal-coronal.png" alt="Rostral middle frontal highlighted on coronal slice 170">
+        <figcaption>Coronal 170<br><code>coronal_170.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="rostral-middle-frontal-sagittal-left.png" alt="Left rostral middle frontal highlighted on sagittal slice 160">
+        <figcaption>Left sagittal 160<br><code>sagittal_160.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="rostral-middle-frontal-sagittal-right.png" alt="Right rostral middle frontal highlighted on sagittal slice 100">
+        <figcaption>Right sagittal 100<br><code>sagittal_100.png</code></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Superior temporal</h2>
+    <p class="note">Lateral temporal gyrus along the Sylvian fissure. The sagittal slices are the far-lateral ones that still contain brain.</p>
+    <div class="grid">
+      <figure>
+        <img src="superior-temporal-axial.png" alt="Superior temporal gyrus highlighted on axial slice 110">
+        <figcaption>Axial 110<br><code>axial_110.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="superior-temporal-coronal.png" alt="Superior temporal gyrus highlighted on coronal slice 120">
+        <figcaption>Coronal 120<br><code>coronal_120.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="superior-temporal-sagittal-left.png" alt="Left superior temporal gyrus highlighted on sagittal slice 180">
+        <figcaption>Left sagittal 180<br><code>sagittal_180.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="superior-temporal-sagittal-right.png" alt="Right superior temporal gyrus highlighted on sagittal slice 80">
+        <figcaption>Right sagittal 80<br><code>sagittal_80.png</code></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Temporal pole</h2>
+    <p class="note">Anterior tip of the temporal lobe, beside the orbits. On the axial slice the cerebellum is the folded tissue toward the bottom, and it is not the pole.</p>
+    <div class="grid">
+      <figure>
+        <img src="temporal-pole-axial.png" alt="Temporal pole highlighted on axial slice 140">
+        <figcaption>Axial 140<br><code>axial_140.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="temporal-pole-coronal.png" alt="Temporal pole highlighted on coronal slice 150">
+        <figcaption>Coronal 150<br><code>coronal_150.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="temporal-pole-sagittal-left.png" alt="Left temporal pole highlighted on sagittal slice 150">
+        <figcaption>Left sagittal 150<br><code>sagittal_150.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="temporal-pole-sagittal-right.png" alt="Right temporal pole highlighted on sagittal slice 100">
+        <figcaption>Right sagittal 100<br><code>sagittal_100.png</code></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Caudate</h2>
+    <p class="note">Gray bulge in the lateral wall of the frontal horn. On the axial slice the head is the larger mass beside the frontal horn; the smaller spot behind it is the body.</p>
+    <div class="grid">
+      <figure>
+        <img src="caudate-axial.png" alt="Caudate highlighted on axial slice 100">
+        <figcaption>Axial 100<br><code>axial_100.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="caudate-coronal.png" alt="Caudate highlighted on coronal slice 140">
+        <figcaption>Coronal 140<br><code>coronal_140.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="caudate-sagittal-left.png" alt="Left caudate highlighted on sagittal slice 140">
+        <figcaption>Left sagittal 140<br><code>sagittal_140.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="caudate-sagittal-right.png" alt="Right caudate highlighted on sagittal slice 110">
+        <figcaption>Right sagittal 110<br><code>sagittal_110.png</code></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hippocampus</h2>
+    <p class="note">Medial temporal gray under the choroid fissure, behind the temporal pole. If axial 130 is a thin cut in another subject, also open axial 120.</p>
+    <div class="grid">
+      <figure>
+        <img src="hippocampus-axial.png" alt="Hippocampus highlighted on axial slice 130">
+        <figcaption>Axial 130<br><code>axial_130.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="hippocampus-coronal.png" alt="Hippocampus highlighted on coronal slice 120">
+        <figcaption>Coronal 120<br><code>coronal_120.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="hippocampus-sagittal-left.png" alt="Left hippocampus highlighted on sagittal slice 150">
+        <figcaption>Left sagittal 150<br><code>sagittal_150.png</code></figcaption>
+      </figure>
+      <figure>
+        <img src="hippocampus-sagittal-right.png" alt="Right hippocampus highlighted on sagittal slice 100">
+        <figcaption>Right sagittal 100<br><code>sagittal_100.png</code></figcaption>
+      </figure>
+    </div>
+  </section>
+</body>
+</html>

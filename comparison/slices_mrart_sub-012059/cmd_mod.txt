@@ -1,0 +1,57 @@
+-v /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects/mrart_sub-012059_acq-headmotion2_T1w/mri/T1.mgz
+-f /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects/mrart_sub-012059_acq-headmotion2_T1w/surf/lh.white:edgecolor=blue:edgethickness=2
+-f /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects/mrart_sub-012059_acq-headmotion2_T1w/surf/rh.white:edgecolor=blue:edgethickness=2
+-f /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects/mrart_sub-012059_acq-headmotion2_T1w/surf/lh.pial:edgecolor=red:edgethickness=2
+-f /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/fs_subjects/mrart_sub-012059_acq-headmotion2_T1w/surf/rh.pial:edgecolor=red:edgethickness=2
+-viewport axial -slice 127 49 131 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_40.png -noquit
+-viewport axial -slice 127 59 130 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_50.png -noquit
+-viewport axial -slice 127 69 130 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_60.png -noquit
+-viewport axial -slice 127 79 129 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_70.png -noquit
+-viewport axial -slice 126 89 129 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_80.png -noquit
+-viewport axial -slice 126 99 128 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_90.png -noquit
+-viewport axial -slice 126 109 128 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_100.png -noquit
+-viewport axial -slice 126 119 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_110.png -noquit
+-viewport axial -slice 125 129 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_120.png -noquit
+-viewport axial -slice 125 139 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_130.png -noquit
+-viewport axial -slice 125 149 126 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_140.png -noquit
+-viewport axial -slice 125 159 126 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_150.png -noquit
+-viewport axial -slice 124 169 125 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_160.png -noquit
+-viewport axial -slice 124 179 125 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_170.png -noquit
+-viewport axial -slice 124 189 124 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_180.png -noquit
+-viewport axial -slice 124 200 124 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_190.png -noquit
+-viewport axial -slice 123 210 123 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_axial_200.png -noquit
+-viewport coronal -slice 126 132 39 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_40.png -noquit
+-viewport coronal -slice 126 133 49 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_50.png -noquit
+-viewport coronal -slice 126 133 59 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_60.png -noquit
+-viewport coronal -slice 125 134 69 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_70.png -noquit
+-viewport coronal -slice 125 134 80 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_80.png -noquit
+-viewport coronal -slice 125 134 90 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_90.png -noquit
+-viewport coronal -slice 125 135 100 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_100.png -noquit
+-viewport coronal -slice 125 135 110 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_110.png -noquit
+-viewport coronal -slice 125 136 120 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_120.png -noquit
+-viewport coronal -slice 125 136 130 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_130.png -noquit
+-viewport coronal -slice 125 137 140 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_140.png -noquit
+-viewport coronal -slice 125 137 150 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_150.png -noquit
+-viewport coronal -slice 125 138 160 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_160.png -noquit
+-viewport coronal -slice 125 138 170 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_170.png -noquit
+-viewport coronal -slice 125 139 180 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_180.png -noquit
+-viewport coronal -slice 125 139 190 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_190.png -noquit
+-viewport coronal -slice 125 140 200 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_coronal_200.png -noquit
+-viewport sagittal -slice 39 134 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_40.png -noquit
+-viewport sagittal -slice 49 134 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_50.png -noquit
+-viewport sagittal -slice 59 134 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_60.png -noquit
+-viewport sagittal -slice 69 135 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_70.png -noquit
+-viewport sagittal -slice 79 135 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_80.png -noquit
+-viewport sagittal -slice 89 135 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_90.png -noquit
+-viewport sagittal -slice 98 135 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_100.png -noquit
+-viewport sagittal -slice 108 136 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_110.png -noquit
+-viewport sagittal -slice 118 136 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_120.png -noquit
+-viewport sagittal -slice 128 136 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_130.png -noquit
+-viewport sagittal -slice 138 136 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_140.png -noquit
+-viewport sagittal -slice 148 137 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_150.png -noquit
+-viewport sagittal -slice 158 137 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_160.png -noquit
+-viewport sagittal -slice 168 137 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_170.png -noquit
+-viewport sagittal -slice 178 137 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_180.png -noquit
+-viewport sagittal -slice 188 138 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_190.png -noquit
+-viewport sagittal -slice 198 138 127 -viewsize 800 800 -ss /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project/comparison/slices_mrart_sub-012059/mod_sagittal_200.png -noquit
+-quit
