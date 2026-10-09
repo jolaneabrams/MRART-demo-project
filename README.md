@@ -137,7 +137,7 @@ Inclusion changes only when a scan fails the written checklist below, or when `r
 
 The screen is `analysis/outlier_screen.py`. It is applied separately to still→mild and still→moderate percent change, `100 × (motion − still) / still`, on six locked measures: bilateral mean thickness, rostral middle frontal, superior temporal, temporal pole, caudate (L+R), and hippocampus (L+R). A robust flag is an Iglewicz–Hoaglin modified z above 3.5 (`0.6745 × (x − median) / MAD`), with the median and MAD taken inside that measure and that contrast. Tukey 1.5×IQR and an ENIGMA-style z (±2.698) are stored alongside and are not a second exclusion rule. Outputs: `tables/outlier_screen.csv`, `tables/outlier_screen_pivot.csv`, and `tables/outlier_screen_heatmap.png`.
 
-Pass/fail calls from FreeView are recorded in `analysis/QC_checklist.xlsx`. The written criteria are in `analysis/FreeSurfer_QC_checklist.docx` and below.
+Pass/fail calls from FreeView are recorded in `qc_reference/QC_checklist.xlsx`. The written criteria are in `qc_reference/FreeSurfer_QC_checklist.docx` and below.
 
 ### Surface QC checklist
 
@@ -237,7 +237,7 @@ Per-subject logs are stored in `logs/`. Batch-generated failure list: `logs/fail
 - ✅ Thickness and volume tables extracted (`tables/lh.aparc.thickness.csv`, `tables/rh.aparc.thickness.csv`, `tables/aseg.volume.csv`)
 - ✅ Outlier screen run (234 rows: 6 measures × 19 mild pairs + 6 × 20 moderate pairs)
 - ✅ Surface QC checklist written (21–29 Sep 2026)
-- ⏳ Visual QC pass/fail calls in FreeView (`analysis/QC_checklist.xlsx` has a few Pass notes; most scans are still blank)
+- ⏳ Visual QC pass/fail calls in FreeView (`qc_reference/QC_checklist.xlsx` has a few Pass notes; most scans are still blank)
 - ⏳ ICC(3,1) reliability per region
 - ⏳ Figures: box plots, spaghetti plot, ICC bar chart (the outlier heatmap is already in `tables/outlier_screen_heatmap.png`)
 - 📁 Raw data: `ds004173/` (local, not in git)
@@ -246,7 +246,7 @@ Per-subject logs are stored in `logs/`. Batch-generated failure list: `logs/fail
 
 ## Next steps
 
-- Finish visual QC of white/pial surfaces in FreeView and record each call in `analysis/QC_checklist.xlsx`
+- Finish visual QC of white/pial surfaces in FreeView and record each call in `qc_reference/QC_checklist.xlsx`
 - Calculate ICC(3,1) reliability per region
 - Generate figures (box plots, spaghetti plot, ICC bar chart)
 
