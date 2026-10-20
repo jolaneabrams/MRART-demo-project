@@ -51,7 +51,7 @@ Reuter et al. scanned 12 healthy volunteers within a single session under differ
 
 **Dataset:** MR-ART (Movement-Related ARTefacts)  
 **Repository:** [OpenNeuro ds004173](https://openneuro.org/datasets/ds004173)  
-**DOI:** [Insert DOI once verified]
+**DOI:** (10.18112/openneuro.ds004173.v1.0.2)
 
 The MR-ART dataset contains T1-weighted 3D structural MRI images of 148 healthy adults, each scanned three times under increasing head motion (still, mild, moderate). All scans are anonymized, BIDS-organized, and defaced.
 
