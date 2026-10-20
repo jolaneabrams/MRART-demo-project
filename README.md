@@ -66,15 +66,32 @@ openneuro-py download --dataset ds004173 --include sub-000103  # repeat for each
 
 ## Pipeline overview
 
-[BLOCK FOR PIPELINE FLOWCHART IMAGE]
+Each T1 is reconstructed on its own. The outlier screen can only send a scan back to the slices. Inclusion changes only at the checklist.
 
-Insert flowchart image here after batch begins running:
+```mermaid
+flowchart TD
+  bids["OpenNeuro ds004173<br/>20 subjects, 59 T1 scans<br/>still, headmotion1, headmotion2"]
+  recon["run_reconall.sh<br/>recon-all -all, FreeSurfer 8.2.0<br/>each scan processed independently"]
+  tables["Thickness and volume tables<br/>lh.aparc, rh.aparc, aseg"]
+  measures["Six locked measures<br/>mean thickness, three parcels,<br/>caudate and hippocampus"]
+  pct["Percent change from the still scan<br/>mild and moderate separately"]
+  screen["Outlier screen<br/>modified z above 3.5"]
+  flag["Flag: re-review<br/>does not change inclusion"]
+  qc["FreeView checklist<br/>white, pial, white matter, topology"]
+  decision{"recon-all unfinished,<br/>or an error in a locked measure?"}
+  fail["Fail: excluded"]
+  keep["Pass: kept"]
+  later["ICC 3,1 and remaining figures<br/>not yet run"]
 
-- Input: BIDS-formatted T1 scans (`sub-*/anat/*_T1w.nii.gz`)
-- Processing: FreeSurfer `recon-all -all` (v8.2.0)
-- Output: Per-subject `aparc.stats` / `aseg.stats` tables
-- Aggregation: Python extraction to tidy CSV
-- Analysis: Drift metrics (percent change), reliability (ICC)
+  bids --> recon --> tables --> measures
+  measures --> pct --> screen --> flag
+  measures --> qc
+  flag -.-> qc
+  qc --> decision
+  decision -->|yes| fail
+  decision -->|no| keep
+  keep --> later
+```
 
 ## Environment
 
@@ -135,7 +152,11 @@ source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
 Inclusion changes only when a scan fails the written checklist below, or when `recon-all` did not finish. The quantitative outlier screen is a re-review list. It does not fail a scan.
 
-The screen is `analysis/outlier_screen.py`. It is applied separately to still→mild and still→moderate percent change, `100 × (motion − still) / still`, on six locked measures: bilateral mean thickness, rostral middle frontal, superior temporal, temporal pole, caudate (L+R), and hippocampus (L+R). A robust flag is an Iglewicz–Hoaglin modified z above 3.5 (`0.6745 × (x − median) / MAD`), with the median and MAD taken inside that measure and that contrast. Tukey 1.5×IQR and an ENIGMA-style z (±2.698) are stored alongside and are not a second exclusion rule. Outputs: `tables/outlier_screen.csv`, `tables/outlier_screen_pivot.csv`, and `tables/outlier_screen_heatmap.png`.
+The screen is `analysis/outlier_screen.py`. It is applied separately to still→mild (`acq-headmotion1`) and still→moderate (`acq-headmotion2`) percent change, `100 × (motion − still) / still`, on six locked measures: bilateral mean thickness, rostral middle frontal, superior temporal, temporal pole, caudate (L+R), and hippocampus (L+R). A robust flag is an Iglewicz–Hoaglin modified z above 3.5 (`0.6745 × (x − median) / MAD`), with the median and MAD taken inside that measure and that contrast. Tukey 1.5×IQR and an ENIGMA-style z (±2.698) are stored alongside and are not a second exclusion rule. Outputs: `tables/outlier_screen.csv`, `tables/outlier_screen_pivot.csv`, and `tables/outlier_screen_heatmap.png`. Both contrasts are already in that table (234 rows: 6 measures × 19 mild pairs + 6 × 20 moderate pairs). `sub-105822` has no mild scan. Finishing visual QC does not require a second outlier pass.
+
+Six measures were locked before the screen was used: bilateral mean cortical thickness; rostral middle frontal, superior temporal, and temporal pole thickness; and left-plus-right caudate and hippocampal volume. Mean thickness is the global cortical endpoint. The three parcels and two subcortical volumes were included so the same pre-specified screen covered regional thickness and subcortical volume. A scan fails visual quality control only when an error affects one of these endpoints. The same six are the pre-specified ROIs in the fail criteria below.
+
+The set is not a representative sample of the cortex or of subcortical gray matter, and it is not the vertex-wise map reported by Reuter et al. (2015). Their strongest thinning was in precentral, postcentral, entorhinal, and parahippocampal cortex, and those regions are not in this list. A null result for caudate or hippocampus describes only those two structures.
 
 Pass/fail calls from FreeView are recorded in `qc_reference/QC_checklist.xlsx`. The written criteria are in `qc_reference/FreeSurfer_QC_checklist.docx` and below.
 
