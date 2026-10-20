@@ -3,7 +3,7 @@
 FreeSurfer recon-all on 20 subjects × 3 motion conditions from the MR-ART dataset (ds004173), quantifying how cortical thickness estimates drift under increasing head motion. This is a partial replication of Reuter et al. (2015; doi: [10.1016/j.neuroimage.2014.12.006](https://doi.org/10.1016/j.neuroimage.2014.12.006)). Intended as a pipeline-competence artifact rather than a novel publication.
 
 **Author:** Jolane Abrams  
-**Contact:** [jkabrams@alumni.usc.edu](mailto:jkabrams@alumni.usc.edu) | /Users/jolaneabrams/Desktop/GitHub/MRART_Demo_Project | [https://www.linkedin.com/in/jolane-abrams-309b3412/](https://www.linkedin.com/in/jolane-abrams-309b3412/)
+**Contact:** [jkabrams@alumni.usc.edu](mailto:jkabrams@alumni.usc.edu) | [https://www.linkedin.com/in/jolane-abrams-309b3412/](https://www.linkedin.com/in/jolane-abrams-309b3412/)
 
 ---
 
