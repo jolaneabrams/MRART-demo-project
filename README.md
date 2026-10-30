@@ -167,7 +167,7 @@ Pass/fail calls from FreeView are recorded in `qc_reference/QC_checklist.xlsx`. 
 **Scope:** White surface, pial surface, white-matter boundaries, topology. Applied to all scans in the analysis set.
 
 **Reviewer:** Jolane Abrams  
-**Date:** 21–29 September 2026  
+**Date:** 21 September - November 2026  
 **FreeSurfer version:** 8.2.0  
 **Viewer:** FreeView (XQuartz 2.8.6)
 
