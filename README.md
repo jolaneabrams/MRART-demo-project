@@ -9,7 +9,7 @@ FreeSurfer recon-all on 20 subjects × 3 motion conditions from the MR-ART datas
 
 ## Abstract
 
-Head motion degrades structural MRI morphometry, but the magnitude of that degradation is rarely shown end-to-end with a public dataset. This project runs FreeSurfer recon-all on 20 subjects × 3 motion conditions from the MR-ART dataset (ds004173) and quantifies how cortical thickness estimates drift under increasing head motion, attempting to reproduce the directional finding in Reuter et al. (2015): head motion during acquisition reduces gray-matter volume and thickness estimates, and that bias remains after scans that fail quality control are excluded.
+Head motion degrades structural MRI morphometry, but the magnitude of that degradation is rarely shown end-to-end with a public dataset. This project runs FreeSurfer recon-all on 20 subjects × 3 motion conditions from the MR-ART dataset (ds004173) and quantifies how cortical thickness estimates drift under increasing head motion, attempting to reproduce the directional finding in Reuter et al. (2015): head motion during acquisition reduces gray-matter volume and thickness estimates, and that bias remains after scans that fail quality control are excluded. On the 17 passing still–moderate pairs, median bilateral mean thickness was 3.39% lower under moderate motion (IQR −3.98 to −2.30; Holm p = 0.0015). Superior temporal thickness fell 5.26%, and temporal pole 18.01%. Caudate and hippocampus stayed near zero. Including the three failed moderate scans left the global-thickness median at −3.39%. While Reuter et al. reported a rate of about 0.7% gray-matter volume loss per mm/min, this project compares labeled motion conditions and has no mm/min measure.
 
 ---
 
