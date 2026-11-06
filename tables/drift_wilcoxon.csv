@@ -1,0 +1,7 @@
+measure,measure_key,n_pairs,median_pct,q1_pct,q3_pct,n_thinner_or_smaller,n_thicker_or_larger,W,p_raw,p_holm,holm_reject_0.05,n_pairs_incl_fail,median_pct_incl_fail,q1_pct_incl_fail,q3_pct_incl_fail
+global mean thickness,mean_thickness_mm,17,-3.39,-3.98,-2.3,15,2,8.0,0.0003814697265625,0.00152587890625,True,20,-3.39,-3.69,-2.29
+rostral middle frontal,rmfg_mm,17,0.42,-2.65,2.63,8,9,76.0,1.0,1.0,False,20,-0.01,-2.67,2.5
+superior temporal,stg_mm,17,-5.26,-9.4,-3.61,16,1,1.0,3.0517578125e-05,0.000152587890625,True,20,-5.51,-10.37,-4.01
+temporal pole,tpole_mm,17,-18.01,-24.64,-8.46,17,0,0.0,1.52587890625e-05,9.1552734375e-05,True,20,-20.85,-27.91,-13.2
+caudate (L+R),caudate_mm3,17,0.42,-0.18,0.72,6,11,40.0,0.088653564453125,0.265960693359375,False,20,0.36,-0.52,0.69
+hippocampus (L+R),hippocampus_mm3,17,0.83,-0.15,1.66,5,12,40.0,0.088653564453125,0.265960693359375,False,20,0.84,-0.16,1.6
