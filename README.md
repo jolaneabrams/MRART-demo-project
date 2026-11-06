@@ -172,7 +172,7 @@ The sheet has one call for each of the 59 reconstructed scans: 56 Pass and 3 Fai
 **Scope:** White surface, pial surface, white-matter boundaries, topology. Applied to all scans in the analysis set.
 
 **Reviewer:** Jolane Abrams  
-**Date:** 21 September - November 2026  
+**Date:** 21 September - 5 November 2026  
 **FreeSurfer version:** 8.2.0  
 **Viewer:** FreeView (XQuartz 2.8.6)
 
