@@ -9,6 +9,8 @@ FreeSurfer recon-all on 20 subjects × 3 motion conditions from the MR-ART datas
 
 ## Abstract
 
+![Graphical abstract of the MR-ART partial replication. Head motion lowers cortical thickness, most in the superior temporal cortex and temporal pole, while caudate and hippocampal volumes stay near their still-scan values.](graphical-abstract.jpg)
+
 Head motion degrades structural MRI morphometry, but the magnitude of that degradation is rarely shown end-to-end with a public dataset. Twenty subjects from MR-ART (OpenNeuro ds004173) were each scanned at rest and under mild and moderate head motion (59 T1-weighted scans; one mild scan was never reconstructed). Every scan was reconstructed independently with FreeSurfer 8.2.0. The project is a partial replication of Reuter et al. (2015): head motion reduces gray-matter volume and thickness estimates, and the bias remains after scans that fail quality control are excluded. Percent change from each subject’s still scan was calculated for both mild and moderate motion. The pre-specified tests compare still with moderate. On the 17 pairs that passed a written surface checklist, median bilateral mean thickness was 3.39% lower under moderate motion (IQR −3.98 to −2.30; Holm p = 0.0015). Superior temporal thickness fell 5.26%, and temporal pole 18.01%. Caudate and hippocampus stayed near zero. Including the three failed moderate scans left the global-thickness median at −3.39%. Across still, mild, and moderate, ICC(3,1) on the 16 passing trios was 0.78 for global mean thickness and 0.35 for temporal pole. Reuter et al. reported about 0.7% gray-matter volume loss per mm/min; these results are contrasts between labeled conditions and have no mm/min measure.
 
 ---
